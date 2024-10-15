@@ -1,0 +1,27 @@
+.button {
+	padding: 12px 24px;
+	border-radius: 30px;
+	transition: all .3s;
+	text-decoration: none;
+	font-family: "Manrope", sans-serif;
+}
+
+.normal {
+	background: #5F418B;
+	color: #FFFFFF;
+
+	&:hover {
+		background: #221e39;
+	}
+}
+
+.outlined {
+	border: 2px solid #5F418B;
+	color: #5F418B;
+
+
+	&:hover {
+		background: #5F418B;
+		color: #ffffff;
+	}
+}

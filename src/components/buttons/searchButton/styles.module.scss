@@ -1,0 +1,14 @@
+.input {
+	padding: 12.5px;
+	border-radius: 50%;
+	background: #F2F2F7;
+	transition: all .3s;
+
+	&:hover {
+		background: #898384;
+	}
+}
+
+.magnifyingGlass {
+	width: 15px;
+}
