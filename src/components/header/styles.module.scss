@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -10,7 +12,6 @@
 	display: flex;
 	align-items: center;
 	width: 70%;
-	// background-color: aqua;
 
 	.logo {
 		width: 101px;
@@ -22,22 +23,21 @@
 		width: 60%;
 		justify-content: space-between;
 		align-items: center;
-		// background-color: green;
 
 		a {
-			font-family: "Manrope", sans-serif;
+			font-family: $manrope;
 			font-weight: 500;
 			font-size: 16px;
 			line-height: 22px;
 			transition: all .3s;
 			text-decoration: none;
-			color: #393939;
+			color: $darkGray;
 
 			&:hover {
 				border-radius: 30px;
 				padding: 10px 16px;
-				color: #ffffff;
-				background: #393939;
+				color: $white;
+				background: $darkGray;
 			}
 		}
 	}
@@ -48,7 +48,6 @@
 	align-items: center;
 	justify-content: flex-end;
 	width: 30%;
-	// background-color: deeppink;
 
 	:nth-child(2) {
 		margin: 0 25px;

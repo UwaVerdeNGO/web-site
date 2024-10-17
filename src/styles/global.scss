@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+	margin: 0;
+}
+
+/***** ALIGNMENTS *******/
+
+.horizontalAlignCenter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/***** BACKGROUNDCOLORS *******/
+
+.grayBackground {
+	background: #393939;
+}
+
+.blackBackground {
+	background: #000000;
+}

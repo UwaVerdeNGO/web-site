@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import Logo from "assets/icons/logo.png"
 import styles from "./styles.module.scss"
-import { Button } from 'components/buttons/purpleButtons'
+import { PurpleButton } from 'components/buttons/purpleButtons'
 import { SearchButton } from 'components/buttons/searchButton'
 
 export const Header: FC = () => {
@@ -20,8 +20,8 @@ export const Header: FC = () => {
 			</div>
 			<div className={styles.buttons}>
 				<SearchButton />
-				<Button href='#' outline>Sign In</Button>
-				<Button href='#'>Donate</Button>
+				<PurpleButton href='#' style='outlined'>Sign In</PurpleButton>
+				<PurpleButton href='#' style='normal'>Donate</PurpleButton>
 			</div>
 		</div>
 	)

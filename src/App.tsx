@@ -1,10 +1,12 @@
-import React from 'react';
+import { Hero } from 'sections/hero';
 import { Header } from './components/header';
 
 function App() {
 	return (
-
-		<Header />
+		<>
+			<Header />
+			<Hero />
+		</>
 	);
 }
 

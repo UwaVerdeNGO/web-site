@@ -1,27 +1,40 @@
+@import "../../../styles/variables";
+
 .button {
 	padding: 12px 24px;
 	border-radius: 30px;
 	transition: all .3s;
 	text-decoration: none;
-	font-family: "Manrope", sans-serif;
+	font-family: $manrope;
 }
 
 .normal {
-	background: #5F418B;
-	color: #FFFFFF;
+	background: $purple;
+	color: $white;
 
 	&:hover {
-		background: #221e39;
+		background: $darkPurple;
 	}
 }
 
 .outlined {
-	border: 2px solid #5F418B;
-	color: #5F418B;
+	border: 2px solid $purple;
+	color: $purple;
 
 
 	&:hover {
-		background: #5F418B;
-		color: #ffffff;
+		background: $purple;
+		color: $white;
+	}
+}
+
+.gradient {
+	border: 1px solid $vividPurple;
+	color: $white;
+	background: linear-gradient(90deg, #5E408A 18.34%, #9349FF 137.34%);
+	box-shadow: 2px 2px 10px 0px #9E6EE566;
+
+	&:hover {
+		box-shadow: 0 0 35px 0px #8b3eff;
 	}
 }
