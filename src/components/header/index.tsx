@@ -1,8 +1,9 @@
 import { FC, useState } from 'react'
 import Logo from "assets/icons/purpleLogo.png"
-import styles from "./styles.module.scss"
 import { PurpleButton } from 'components/buttons/purpleButtons'
 import { Drawer } from 'components/drawer'
+import HamburguerMenu from "assets/icons/menu.png"
+import styles from "./styles.module.scss"
 
 export const Header: FC = () => {
 	const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -10,24 +11,34 @@ export const Header: FC = () => {
 	const handleDrawerOpenAndClose = () => {
 		if (isDrawerOpen) {
 			setIsDrawerOpen(false)
-			console.log("fechou")
 		} else {
 			setIsDrawerOpen(true)
-			console.log("abriu")
 		}
 	}
 
 	return (
 		<div className={styles.wrapper}>
-			<button onClick={handleDrawerOpenAndClose}>Open Drawer</button>
+			<button onClick={handleDrawerOpenAndClose} className={styles.menu}>
+				<img src={HamburguerMenu} alt="Hamburguer Menu Icon" />
+			</button>
 
 			<Drawer isOpen={isDrawerOpen} onClose={handleDrawerOpenAndClose}>
-				<h2>Menu</h2>
-				<ul>
-					<li>Home</li>
-					<li>About</li>
-					<li>Contact</li>
-				</ul>
+				<div className={styles.drawerContentWrapper}>
+					<div className={styles.drawerLeftContent}>
+						<h2>Menu</h2>
+						<ul className={styles.drawerMenu}>
+							<li>About Us</li>
+							<li>Our people</li>
+							<li>Projects</li>
+							<li>Eco-learning</li>
+							<li>Collaborate</li>
+							<li>News & events</li>
+							<li>carrers</li>
+							<li>contact</li>
+						</ul>
+					</div>
+					<div className={styles.drawerRightContent}> teste</div>
+				</div>
 			</Drawer>
 
 			<img src={Logo} alt='UwaVerde Logo' className={styles.logo} />

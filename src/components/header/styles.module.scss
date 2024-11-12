@@ -4,8 +4,62 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 0.5px solid #727272;
+	border-bottom: 0.5px solid #B5B5B5;
 	padding: 30px 48px;
+}
+
+.menu {
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	img {
+		width: 40px;
+	}
+}
+
+.drawerContentWrapper {
+	display: flex;
+	padding-left: 0;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	.drawerLeftContent {
+		font-family: $rubik;
+		font-weight: 500;
+		text-transform: uppercase;
+		width: 45%;
+		margin-left: 10%;
+
+		h2 {
+			font-weight: inherit;
+			font-size: 20px;
+			line-height: 24px;
+			color: #FFFFFF80;
+			padding-left: 40px;
+		}
+
+		.drawerMenu {
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			gap: 36px;
+
+			li {
+				font-size: 40px;
+				line-height: 48px;
+				color: #FFFFFF;
+			}
+		}
+	}
+
+	.drawerRightContent {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 44px;
+		width: 45%;
+	}
 }
 
 .logo {

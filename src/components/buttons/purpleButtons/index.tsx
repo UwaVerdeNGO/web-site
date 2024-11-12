@@ -11,6 +11,6 @@ type ButtonProps = {
 
 export const PurpleButton: FC<ButtonProps> = ({ children, href, style, targetBlank, fontSize }) => {
 	return (
-		<a href={href} target={targetBlank ? "_blank" : undefined} className={`${styles.button} ${styles[style]} ${styles[fontSize]}`}>{children}</a>
+		<a href={href} target={targetBlank ? "_blank" : undefined} rel="noreferrer" className={`${styles.button} ${styles[style]} ${styles[fontSize]}`}>{children}</a>
 	)
 }
