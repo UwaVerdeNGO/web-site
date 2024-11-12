@@ -9,32 +9,33 @@
 }
 
 .normal {
-	background: $purple;
+	background: $primaryPurple;
 	color: $white;
 
 	&:hover {
-		background: $darkPurple;
+		background: $primary900Purple;
 	}
 }
 
 .outlined {
-	border: 2px solid $purple;
-	color: $purple;
+	border: 2px solid $primaryPurple;
+	color: $primaryPurple;
 
 
 	&:hover {
-		background: $purple;
+		background: $primaryPurple;
 		color: $white;
 	}
 }
 
 .gradient {
-	border: 1px solid $vividPurple;
+	background: linear-gradient(90deg, $primary400Purple 48.41%, $primary300Purple 116.59%);
+	border: 1px solid $primary300Purple;
 	color: $white;
-	background: linear-gradient(90deg, #5E408A 18.34%, #9349FF 137.34%);
-	box-shadow: 2px 2px 10px 0px #9E6EE566;
+	box-shadow: 3px 3px 15px 0px #5856D699;
+
 
 	&:hover {
-		box-shadow: 0 0 35px 0px #8b3eff;
+		box-shadow: 0 0 35px 0px $primaryPurple;
 	}
 }

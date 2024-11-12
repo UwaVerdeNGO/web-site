@@ -4,52 +4,74 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 0.5px solid #727272;
-	padding: 24px 47px;
+	border-bottom: 0.5px solid #B5B5B5;
+	padding: 30px 48px;
 }
 
-.headerLeftSide {
-	display: flex;
-	align-items: center;
-	width: 70%;
+.menu {
+	border: none;
+	background: none;
+	cursor: pointer;
 
-	.logo {
-		width: 101px;
+	img {
+		width: 40px;
 	}
+}
 
-	.headerOptions {
-		display: flex;
+.drawerContentWrapper {
+	display: flex;
+	padding-left: 0;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	.drawerLeftContent {
+		font-family: $rubik;
+		font-weight: 500;
+		text-transform: uppercase;
+		width: 45%;
 		margin-left: 10%;
-		width: 60%;
-		justify-content: space-between;
-		align-items: center;
 
-		a {
-			font-family: $manrope;
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 22px;
-			transition: all .3s;
-			text-decoration: none;
-			color: $darkGray;
+		h2 {
+			font-weight: inherit;
+			font-size: 20px;
+			line-height: 24px;
+			color: #FFFFFF80;
+			padding-left: 40px;
+		}
 
-			&:hover {
-				border-radius: 30px;
-				padding: 10px 16px;
-				color: $white;
-				background: $darkGray;
+		.drawerMenu {
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			gap: 36px;
+
+			li {
+				font-size: 40px;
+				line-height: 48px;
+				color: #FFFFFF;
 			}
 		}
 	}
+
+	.drawerRightContent {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 44px;
+		width: 45%;
+	}
+}
+
+.logo {
+	width: 139px;
 }
 
 .buttons {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	width: 30%;
 
 	:nth-child(2) {
-		margin: 0 25px;
+		margin-left: 25px;
 	}
 }

@@ -1,0 +1,31 @@
+.drawer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease;
+	background-color: #393939;
+	z-index: 1000;
+
+	&.open {
+		transform: translateX(0);
+	}
+
+	&-content {
+		padding: 20px;
+	}
+}
+
+.closeButton {
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 60px 0 0 68px;
+
+	img {
+		width: 40px;
+	}
+}

@@ -2,6 +2,7 @@
 
 .leftContent {
 	padding: 133px 0 107px;
+	width: 50%;
 
 	h2 {
 		font-family: $rubik;
@@ -9,7 +10,7 @@
 		font-size: 80px;
 		line-height: 95px;
 		max-width: 398px;
-		color: $white;
+		color: $defaultTextGray;
 		margin: 0;
 	}
 
@@ -20,8 +21,14 @@
 		line-height: 28px;
 		max-width: 398px;
 		margin: 8px 0 24px;
-		color: $white;
+		color: $defaultTextGray;
 	}
 }
 
-.rightContent {}
+.rightContent {
+	width: 50%;
+
+	img {
+		width: 100%;
+	}
+}
