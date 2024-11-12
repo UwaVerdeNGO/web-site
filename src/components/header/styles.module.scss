@@ -5,51 +5,19 @@
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 0.5px solid #727272;
-	padding: 24px 47px;
+	padding: 30px 48px;
 }
 
-.headerLeftSide {
-	display: flex;
-	align-items: center;
-	width: 70%;
-
-	.logo {
-		width: 101px;
-	}
-
-	.headerOptions {
-		display: flex;
-		margin-left: 10%;
-		width: 60%;
-		justify-content: space-between;
-		align-items: center;
-
-		a {
-			font-family: $manrope;
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 22px;
-			transition: all .3s;
-			text-decoration: none;
-			color: $darkGray;
-
-			&:hover {
-				border-radius: 30px;
-				padding: 10px 16px;
-				color: $white;
-				background: $darkGray;
-			}
-		}
-	}
+.logo {
+	width: 139px;
 }
 
 .buttons {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	width: 30%;
 
 	:nth-child(2) {
-		margin: 0 25px;
+		margin-left: 25px;
 	}
 }
