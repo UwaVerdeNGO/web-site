@@ -1,14 +1,26 @@
 @import "../../../styles/variables";
 
 .button {
-	padding: 12px 24px;
 	border-radius: 30px;
 	transition: all .3s;
 	text-decoration: none;
 	font-family: $manrope;
+	font-weight: 600;
 }
 
-.normal {
+
+/***** SPACING *******/
+.smallSpacing {
+	padding: 14px 20px
+}
+
+.mediumSpacing {
+	padding: 13px 32px
+}
+
+/***** COLORS *******/
+
+.purple {
 	background: $primaryPurple;
 	color: $white;
 
@@ -38,4 +50,25 @@
 	&:hover {
 		box-shadow: 0 0 35px 0px $primaryPurple;
 	}
+}
+
+.white {
+	background: $white;
+	color: $primaryPurple;
+
+	&:hover {
+		box-shadow: 0 0 35px 0px $white;
+	}
+}
+
+/***** FONT SIZES *******/
+
+.small {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.medium {
+	font-size: 20px;
+	line-height: 27px;
 }

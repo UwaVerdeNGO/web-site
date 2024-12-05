@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.sectionTitle {
+	font-family: $rubik;
+	font-size: 56px;
+	font-weight: 600;
+	line-height: 66.36px;
+	text-align: left;
+	margin: 0;
+	padding: 0 0 33px 0;
+	border-bottom: 1px solid $lightBlack;
+	color: $defaultTextGray;
+}
+
+.headerText {
+	font-family: $manrope;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 38.25px;
+	text-align: left;
+	color: $defaultTextGray
+}
+
+.bodyText {}

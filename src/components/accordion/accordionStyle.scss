@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.accordion {
+	// width: 100%;
+}
+
+.accordion-button {
+	background-color: $almostWhite !important;
+	padding: 48px 0 !important;
+	// border-radius: 25px !important;
+}
+
+.accordion-item {
+	border-bottom: 1px solid $lightBlack !important;
+}
+
+.accordion-button:focus {
+	box-shadow: 0 0 0 0.25rem hsla(241, 61%, 59%, .5) !important;
+}
+
+.accordion-button::after {
+	background-image: url(../../assets/icons/addIcon.png) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+	// background-image: url(../../assets/icons/closeGradientIcon.png) !important;
+	background-image: url(../../assets/icons/closeIconWithoutBright.png) !important;
+	transform: rotate(-135deg) !important;
+}
+
+.accordion-body {
+	background-color: $almostWhite;
+	width: 100%;
+}

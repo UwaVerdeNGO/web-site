@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	// max-width: 499px;
+}
+
+.bigSpacing {
+	// padding: 48px 0 48px 48px;
+	padding: 0;
+}
+
+.mediumSpacing {
+	padding: 36px;
+}
+
+.purple {
+	background: $primaryPurple;
+}
+
+.black {
+	background: $defaultTextGray;
+}
+
+.gradientPurple {
+	background: linear-gradient(0deg, $primary400Purple -50.12%, $primary300Purple 138.88%);
+	border: 2px solid $primary300Purple;
+}
+
+.gray {
+	border: 1px solid $white;
+	background: $gray;
+}
