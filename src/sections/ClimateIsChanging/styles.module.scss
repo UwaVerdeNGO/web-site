@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 347px 0 285px;
+}
+
+.firstMessage,
+.secondMessage {
+	font-family: $manrope;
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 76.5px;
+	text-align: center;
+	color: $white;
+
+}
+
+// .secondMessage {}
