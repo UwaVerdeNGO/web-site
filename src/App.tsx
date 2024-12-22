@@ -1,4 +1,3 @@
-import { Hero } from 'sections/Hero';
 import { Header } from './components/header';
 import { LeadCapture } from 'sections/LeadCapture';
 import { HorizontalCards } from 'sections/HorizontalCards';
@@ -9,6 +8,7 @@ import { FeaturedNews } from 'sections/FeaturedNews';
 import { Comments } from 'sections/coments';
 import Silvia from "assets/images/Silvia.png"
 import { ClimateIsChanging } from 'sections/ClimateIsChanging';
+import { Hero } from 'sections/hero';
 
 function App() {
 	return (
