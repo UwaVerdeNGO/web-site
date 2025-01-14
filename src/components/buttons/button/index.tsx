@@ -7,7 +7,7 @@ type ButtonProps = {
 	targetBlank?: boolean;
 	background: 'purple' | 'outlined' | 'gradient' | 'white'
 	fontSize: 'small' | 'medium'
-	spacing: 'smallSpacing' | 'mediumSpacing'
+	spacing: 'smallSpacing' | 'mediumSpacing' | 'bigSpacing'
 }
 
 export const Button: FC<ButtonProps> = ({ children, href, background, targetBlank, fontSize, spacing }) => {
