@@ -36,7 +36,7 @@ function App() {
 			<Comments comment={`"Learn as you grow, grow as you learn – That's what UwaVerde offers. It's a chance to be part of a meaningful effort for a sustainable future, while simultaneously growing knowledge and skills through collaborative learning."`} commentatorName='Silvia Prodanova' commentatorPosition='CCO' profilePhoto={Silvia} />
 			<Spacer height='200px' />
 			<ClimateIsChanging />
-			<Spacer height='70px' />
+			{/* <Spacer height='70px' /> */}
 			<Newsletter />
 			<Footer />
 		</>

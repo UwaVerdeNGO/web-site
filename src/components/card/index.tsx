@@ -3,7 +3,7 @@ import styles from "./styles.module.scss"
 
 type CardProps = {
 	children: ReactNode;
-	background: 'purple' | 'black' | 'gradientPurple' | 'gray'
+	background: 'purple' | 'black' | 'gradientPurple' | 'gray' | 'green' | 'transparent'
 	spacing: 'bigSpacing' | 'mediumSpacing' | 'none'
 }
 

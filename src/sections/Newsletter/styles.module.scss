@@ -1,5 +1,9 @@
 @import "../../styles/variables";
 
+.wrapper {
+	background-color: $defaultTextGray;
+}
+
 .spacerTop {
 	height: 90px;
 }

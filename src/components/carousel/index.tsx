@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import GreenArrow from "assets/icons/greenArrow.png"
+import WhiteArrow from "assets/icons/whiteArrow.png"
 import styles from "./styles.module.scss"
 
 interface CarouselProps {
@@ -7,52 +9,62 @@ interface CarouselProps {
 
 export const Carousel: React.FC<CarouselProps> = ({ cards }) => {
 	const [activeIndex, setActiveIndex] = useState(0);
+	const [isFowardHovered, setIsFowardHovered] = useState(false);
+	const [isBackwardHovered, setIsBackwardHovered] = useState(false);
 
 	const handlePrev = () => {
-		setActiveIndex((prevIndex) =>
-			prevIndex === 0 ? cards.length - 1 : prevIndex - 1
-		);
+		if (activeIndex === 0) {
+			return setActiveIndex(cards.length - 1)
+		}
+		return setActiveIndex(activeIndex - 1)
 	};
 
 	const handleNext = () => {
-		setActiveIndex((prevIndex) =>
-			prevIndex === cards.length - 1 ? 0 : prevIndex + 1
-		);
+		if (activeIndex === cards.length - 1) {
+			return setActiveIndex(0)
+		}
+		return setActiveIndex(activeIndex + 1)
+	};
+
+
+	const getClassName = (index: number) => {
+		if (index === activeIndex) {
+			return styles.active;
+		}
+		if (index === activeIndex - 1) {
+			return styles.prev
+		}
+		if (index === activeIndex + 1) {
+			return styles.next
+		}
+		if (activeIndex === 0 && index === cards.length - 1) {
+			return styles.prev
+		}
+		if (activeIndex === cards.length - 1 && index === 0) {
+			return styles.next
+		}
+		return styles.hidden
 	};
 
 	return (
 		<div className={styles.carouselContainer}>
-			<button onClick={handlePrev} className={styles.carouselButton}>
-				{"<"}
-			</button>
-			<div className={styles.carouselCards}>
-				{cards.map((card, index) => {
-					const isActive = index === activeIndex;
-					const isPrev =
-						index === (activeIndex === 0 ? cards.length - 1 : activeIndex - 1);
-					const isNext =
-						index === (activeIndex === cards.length - 1 ? 0 : activeIndex + 1);
+			<div className={styles.buttonsWrapper}>
+				<button onClick={handlePrev} className={styles.carouselButton} onMouseEnter={() => setIsBackwardHovered(true)} onMouseLeave={() => setIsBackwardHovered(false)}>
+					<img src={isBackwardHovered ? WhiteArrow : GreenArrow} alt="Back Arrow" />
+				</button>
+				<button onClick={handleNext} className={styles.carouselButton} onMouseEnter={() => setIsFowardHovered(true)} onMouseLeave={() => setIsFowardHovered(false)}>
+					<img src={isFowardHovered ? WhiteArrow : GreenArrow} alt="Foward Arrow" />
 
-					return (
-						<div
-							key={index}
-							className={`${styles.carouselCard} ${isActive
-								? styles.active
-								: isPrev
-									? styles.prev
-									: isNext
-										? styles.next
-										: ""
-								}`}
-						>
-							{card}
-						</div>
-					);
-				})}
+				</button>
 			</div>
-			<button onClick={handleNext} className={styles.carouselButton}>
-				{">"}
-			</button>
+			<div className={styles.carouselCards}>
+				{cards.map((item, index) => (
+					<div key={index} className={`${styles.carouselCard} ${getClassName(index)}`}>
+						{item}
+					</div>
+				))}
+			</div>
+
 		</div>
 	);
 };
