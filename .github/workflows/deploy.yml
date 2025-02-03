@@ -1,37 +1,38 @@
-name: Deploy to GitHub Pages
+name: Deploy React App to GitHub Pages
 
 on:
   push:
     branches:
-      - staging # Executa a action quando houver push na branch 'staging'
+      - staging # Deploy only when pushing to the main branch
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Passo 1: Checkout do código
-      - name: Checkout repository
+      # Step 1: Checkout the repository
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Passo 2: Configurar Node.js (versão 20 ou superior)
+      # Step 2: Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20 # Usa a versão 20.x.x mais recente
+          node-version: "20" # Specify the Node.js version
 
-      # Passo 3: Instalar dependências
-      - name: Install dependencies
+      # Step 3: Install dependencies
+      - name: Install Dependencies
         run: npm install
 
-      # Passo 4: Build do projeto React
-      # - name: Build project
-      #   run: npm run build
+      # Step 4: Build the React app
+      - name: Build React App
+        run: npm run build
 
-      # Passo 5: Deploy para GitHub Pages
+      - name: Run predeploy
+        run: npm run predeploy
+
+      # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # Diretório de build do React
-          publish_branch: gh-pages # Branch onde o GitHub Pages será publicado
+        run: npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
