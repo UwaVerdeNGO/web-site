@@ -10,7 +10,7 @@ export function LeadCapture() {
 			<ContentContainer>
 				<Card background='black' spacing='bigSpacing'>
 					<div className={styles.content}>
-						<h2>We don’t have to engage in grand, heroic actions to participate in change. Small acts, when multiplied by millions of people, can transform the world.</h2>
+						<h2>We don't have to engage in grand, heroic actions to participate in change. Small acts, when multiplied by millions of people, can transform the world.</h2>
 						<Button background='gradient' fontSize='medium' href='#' spacing='mediumSpacing' targetBlank>Join Our Mission</Button>
 					</div>
 				</Card>
