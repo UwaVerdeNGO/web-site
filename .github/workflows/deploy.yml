@@ -26,13 +26,16 @@ jobs:
 
       # - name: Run predeploy
       #   run: npm run predeploy
-
+      - name: Set Git identity
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
       # # Step 4: Build the React app
       - name: Build React App
-        run: CI=false npm run predeploy
+        run: npm run predeploy
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        run: CI=false npm run deploy
+        run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
