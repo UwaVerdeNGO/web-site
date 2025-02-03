@@ -7,12 +7,12 @@ import { ImageSection } from 'sections/ImageSection';
 import { FeaturedNews } from 'sections/FeaturedNews';
 import { Comments } from 'sections/coments';
 import { ClimateIsChanging } from 'sections/ClimateIsChanging';
-import { Hero } from 'sections/Hero';
+import { Hero } from 'sections/Teste';
 import { WhatWeDo } from 'sections/WhatWeDo';
 import { Newsletter } from 'sections/Newsletter';
 import { Footer } from 'components/footer';
-import Silvia from "assets/images/Silvia.png"
 import { OurProjects } from 'sections/OurProjects';
+import Silvia from "assets/images/Silvia.png"
 
 function App() {
 	return (
