@@ -1,5 +1,5 @@
 name: Deploy React App to GitHub Pages
-
+  // eslint-disable-next-line
 on:
   push:
     branches:
@@ -20,13 +20,16 @@ jobs:
         with:
           node-version: "20" # Specify the Node.js version
 
-      # Step 3: Install dependencies
-      - name: Install Dependencies
-        run: npm install
+      # # Step 3: Install dependencies
+      # - name: Install Dependencies
+      #   run: npm install
 
-      # Step 4: Build the React app
-      - name: Build project
-        run: DISABLE_ESLINT_PLUGIN=true npm run build
+      # - name: Run predeploy
+      #   run: npm run predeploy
+
+      # # Step 4: Build the React app
+      - name: Build React App
+        run: EXTEND_ESLINT=false npm run build
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
