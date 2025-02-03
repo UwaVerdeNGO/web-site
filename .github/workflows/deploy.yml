@@ -14,11 +14,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Passo 2: Configurar Node.js (versão 20 ou superior)
+      # Passo 2: Configurar Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20 # Usa a versão 20.x.x mais recente
+          node-version: 18 # Altere para a versão do Node.js que você usa
 
       # Passo 3: Instalar dependências
       - name: Install dependencies
