@@ -28,7 +28,7 @@ jobs:
       #   run: npm run predeploy
       - name: Set Git identity
         run: |
-          git config --global user.email "github-actions@github.com"
+          git config --global user.email "arthur.ramos.amaral@hotmail.com"
           git config --global user.name "GitHub Actions"
       # # Step 4: Build the React app
       - name: Build React App
