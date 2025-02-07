@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { CSSProperties, FC } from 'react'
 import styles from "./styles.module.scss"
 
 type ButtonProps = {
@@ -8,10 +8,11 @@ type ButtonProps = {
 	background: 'purple' | 'outlined' | 'gradient' | 'white'
 	fontSize: 'small' | 'medium'
 	spacing: 'smallSpacing' | 'mediumSpacing' | 'bigSpacing'
+	style?: CSSProperties;
 }
 
-export const Button: FC<ButtonProps> = ({ children, href, background, targetBlank, fontSize, spacing }) => {
+export const Button: FC<ButtonProps> = ({ children, href, background, targetBlank, fontSize, spacing, style }) => {
 	return (
-		<a href={href} target={targetBlank ? "_blank" : undefined} rel="noreferrer" className={`${styles.button} ${styles[background]} ${styles[fontSize]} ${styles[spacing]}`}>{children}</a>
+		<a style={style} href={href} target={targetBlank ? "_blank" : undefined} rel="noreferrer" className={`${styles.button} ${styles[background]} ${styles[fontSize]} ${styles[spacing]}`}>{children}</a>
 	)
 }

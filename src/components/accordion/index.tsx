@@ -32,5 +32,3 @@ export const AccordionComponent: FC<AccordionData> = ({ data }) => {
 		</>
 	);
 }
-
-export default AccordionComponent;

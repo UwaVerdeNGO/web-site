@@ -16,11 +16,11 @@ import Silvia from "assets/images/Silvia.png"
 
 function App() {
 	return (
-		<>
+		<div style={{ overflowX: '-moz-hidden-unscrollable' }}>
 			<Header />
 			<Hero />
 			<LeadCapture />
-			<Spacer height='107px' />
+			<Spacer height='600px' />
 			<WhatWeDo />
 			<Spacer height='304px' />
 			<HorizontalCards />
@@ -39,7 +39,7 @@ function App() {
 			{/* <Spacer height='70px' /> */}
 			<Newsletter />
 			<Footer />
-		</>
+		</div>
 	);
 }
 

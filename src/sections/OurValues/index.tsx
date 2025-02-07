@@ -1,4 +1,4 @@
-import AccordionComponent from 'components/accordion';
+import { AccordionComponent } from 'components/accordion';
 import { ContentSection } from 'components/contentSection';
 import { ContentContainer } from 'components/contentSection/contentContainer';
 import { AccordionData } from './accordionData';
