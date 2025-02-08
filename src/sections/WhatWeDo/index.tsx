@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { ContentSection } from 'components/contentSection';
 import { ContentContainer } from 'components/contentSection/contentContainer';
 import { StepTab, StepTabItem } from 'components/stepTab';
+import { areasOfWorf } from './areasOfWork';
 import styles from "./styles.module.scss"
 
 export function WhatWeDo() {
 	const [activeTab, setActiveTab] = useState(0)
+
 	return (
 		<ContentSection sectionBackground='almostWhiteBackground'>
 			<ContentContainer>
@@ -24,9 +26,14 @@ export function WhatWeDo() {
 								</p>
 							</StepTabItem>
 							<StepTabItem>
-								<p className={styles.stepsTexts}>
-									Lorem Ipsum
-								</p>
+								<div className={styles.stepsWrapper}>
+									{areasOfWorf.map((item, index) => (
+										<p className={styles.areasOfWorf} key={index}>
+											{item.area}
+										</p>
+									))}
+
+								</div>
 							</StepTabItem>
 						</StepTab>
 					</div>
