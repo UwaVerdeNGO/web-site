@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+
+
+.contentWrapper {
+	height: calc(100vh - 215px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.leftContent {
+	// padding: 133px 0 107px;
+	width: 50%;
+
+	h2 {
+		font-family: $rubik;
+		font-weight: 700;
+		font-size: 80px;
+		line-height: 95px;
+		max-width: 398px;
+		color: $defaultTextGray;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	h3 {
+		font-family: $manrope;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 28px;
+		max-width: 398px;
+		margin: 8px 0 24px;
+		color: $defaultTextGray;
+	}
+}
+
+.rightContent {
+	width: 50%;
+
+	img {
+		width: 100%;
+	}
+}

@@ -1,0 +1,79 @@
+@import "../../../styles/variables";
+
+.button {
+	border-radius: 30px;
+	transition: all .3s;
+	text-decoration: none;
+	font-family: $manrope;
+	font-weight: 600;
+}
+
+
+/***** SPACING *******/
+.smallSpacing {
+	padding: 14px 20px
+}
+
+.mediumSpacing {
+	padding: 13px 32px
+}
+
+.bigSpacing {
+	padding: 14px 53px;
+}
+
+/***** COLORS *******/
+
+.purple {
+	background: $primaryPurple;
+	color: $white;
+
+	&:hover {
+		background: $primary900Purple;
+	}
+}
+
+.outlined {
+	border: 2px solid $primaryPurple;
+	color: $primaryPurple;
+
+
+	&:hover {
+		background: $primaryPurple;
+		color: $white;
+	}
+}
+
+.gradient {
+	background: linear-gradient(90deg, $primary400Purple 48.41%, $primary300Purple 116.59%);
+	border: 1px solid $primary300Purple;
+	color: $white;
+	box-shadow: 3px 3px 15px 0px #5856D699;
+
+
+	&:hover {
+		box-shadow: 0 0 35px 0px $primaryPurple;
+	}
+}
+
+.white {
+	background: $white;
+	color: $primaryPurple;
+
+	&:hover {
+		box-shadow: 0 0 35px 0px $white;
+	}
+}
+
+
+/***** FONT SIZES *******/
+
+.small {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.medium {
+	font-size: 20px;
+	line-height: 27px;
+}

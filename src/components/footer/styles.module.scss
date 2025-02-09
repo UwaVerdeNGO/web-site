@@ -1,0 +1,109 @@
+@import "../../styles/variables";
+
+.wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.topSpacer {
+	height: 92px;
+}
+
+.bottomSpacer {
+	height: 62px;
+}
+
+.topDivision {
+	display: flex;
+	align-items: center;
+	margin-bottom: 94px;
+
+	.info {
+		margin-right: 135px;
+
+		.logo {
+			width: 190px;
+			margin-bottom: 3px;
+		}
+
+		.address {
+			font-family: $manrope;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 21.86px;
+			text-align: left;
+			color: $white;
+
+		}
+	}
+
+	.aboutUs {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.aboutUsSections {
+			display: flex;
+			flex-direction: column;
+			margin-right: 80px;
+
+			p {
+				font-family: $rubik;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 18.96px;
+				text-align: left;
+				margin: 0 0 4px 0;
+				color: $white
+			}
+
+			a {
+				font-family: $manrope;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 21.86px;
+				text-align: left;
+				margin: 4px 0;
+				text-decoration: none;
+				transition: all .3s;
+				color: $white;
+
+				&:hover {
+					color: $lightBlack;
+				}
+			}
+		}
+	}
+}
+
+.bottomDivision {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.copyRights {
+		font-family: $manrope;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 21.86px;
+		color: $white;
+		margin: 0;
+	}
+
+	.documents {
+		display: flex;
+		align-items: center;
+
+		.linkToDocument {
+			font-family: $manrope;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 21.86px;
+			color: $white;
+
+			&:hover {
+				color: $lightBlack;
+			}
+		}
+	}
+}

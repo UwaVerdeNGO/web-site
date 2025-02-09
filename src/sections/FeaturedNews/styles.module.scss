@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	font-family: $rubik;
+	font-size: 56px;
+	font-weight: 600;
+	line-height: 66.36px;
+	margin-bottom: 56px;
+	color: $defaultTextGray;
+
+}
+
+.cards {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}

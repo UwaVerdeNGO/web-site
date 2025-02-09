@@ -1,0 +1,88 @@
+@import "../../styles/variables";
+
+.wrapper {
+	display: flex;
+	// align-items: center;
+	justify-content: space-between;
+
+
+	:nth-child(2) {
+		margin-top: 150px;
+	}
+
+	:nth-child(3) {
+		margin-top: 300px;
+	}
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 36px;
+	width: 300px;
+	height: 348px;
+}
+
+.secondCard {
+	margin-top: 150px;
+}
+
+.thirdCard {
+	margin-top: 300px;
+}
+
+.cardText {
+	font-family: $manrope;
+	font-size: 34px;
+	font-weight: 400;
+	line-height: 46.44px;
+	text-align: left;
+	max-width: 300px;
+	margin-top: 36px;
+	color: $white;
+	transition: all .3s;
+}
+
+.cardTextHovered {
+	font-family: $rubik;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 33px;
+	margin-top: 36px;
+	transition: all .3s;
+	color: $white;
+}
+
+.cardHoveredSubtitle {
+	font-family: $manrope;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 27px;
+	margin: 16px 0 0 0 !important;
+	color: $white;
+	transition: all .3s;
+}
+
+.arrowButton {
+	background: $white;
+	border-radius: 50%;
+	padding: 8px;
+	width: 40px;
+	margin: 0 0 36px 0 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid $white;
+	transition: all .3s;
+
+	&:hover {
+		background: none;
+		border-color: $white;
+	}
+
+	img {
+		transition: all 1s;
+		width: 100%;
+	}
+}

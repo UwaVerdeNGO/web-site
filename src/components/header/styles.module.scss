@@ -6,6 +6,7 @@
 	align-items: center;
 	border-bottom: 0.5px solid #B5B5B5;
 	padding: 30px 48px;
+	background: $white;
 }
 
 .menu {
@@ -38,6 +39,7 @@
 			line-height: 24px;
 			color: #FFFFFF80;
 			padding-left: 40px;
+
 		}
 
 		.drawerMenu {
@@ -50,16 +52,57 @@
 				font-size: 40px;
 				line-height: 48px;
 				color: #FFFFFF;
+				transition: all .3s;
+				cursor: pointer;
+
+				&:hover {
+					color: $primaryPurple;
+				}
+
 			}
 		}
 	}
 
 	.drawerRightContent {
 		display: flex;
+		flex-direction: column;
 		justify-content: flex-end;
 		margin-right: 44px;
-		width: 45%;
+		max-width: 499px;
+
+		.drawerCardText {
+			font-family: $rubik;
+			font-weight: 400;
+			font-size: 40px;
+			line-height: 47px;
+			max-width: 403px;
+			text-transform: capitalize;
+			margin: 48px;
+			color: #FFFFFF;
+		}
+
+		.cardButtonWrapper {
+			margin: 13px 48px 48px 48px;
+		}
+
+		.memberPortalCard {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 48px;
+
+			h2 {
+				margin: 0;
+			}
+
+			img {
+				width: 40px;
+			}
+		}
+
 	}
+
+
 }
 
 .logo {
