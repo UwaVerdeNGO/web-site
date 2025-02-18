@@ -13,6 +13,7 @@ import { Newsletter } from 'sections/Newsletter';
 import { Footer } from 'components/footer';
 import { OurProjects } from 'sections/OurProjects';
 import Silvia from "assets/images/Silvia.png"
+import { Teste } from 'components/teste';
 
 function App() {
 	return (
@@ -30,6 +31,7 @@ function App() {
 			<ImageSection />
 			<Spacer height='180px' />
 			<OurProjects />
+			{/* <Teste /> */}
 			<Spacer height='180px' />
 			<FeaturedNews />
 			<Spacer height='197px' />

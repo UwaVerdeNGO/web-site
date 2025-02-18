@@ -39,7 +39,7 @@ export function OurProjects() {
 		</Card>,
 	];
 	return (
-		<div className={styles.wrapper} id='ourProjects'>
+		<div className={styles.wrapper}>
 			<h2 className={styles.title}>Our Projects</h2>
 			<Carousel cards={cards} />
 		</div>
