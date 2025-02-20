@@ -42,4 +42,18 @@
 	background-color: $almostWhite;
 	padding: 0 1.25rem !important;
 	width: 100%;
+	transform-origin: top;
+	animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+	from {
+		transform: scaleY(0);
+		opacity: 0;
+	}
+
+	to {
+		transform: scaleY(1);
+		opacity: 1;
+	}
 }
