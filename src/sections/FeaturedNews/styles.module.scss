@@ -4,6 +4,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 197px;
+
+	@media screen and (max-width:1024px) {
+		padding: 0 16px 29px 16px;
+	}
 }
 
 .title {
@@ -14,6 +19,12 @@
 	margin-bottom: 56px;
 	color: $defaultTextGray;
 
+
+	@media screen and (max-width:1024px) {
+		font-size: 28px;
+		line-height: 38px;
+		margin-bottom: 19px;
+	}
 }
 
 .cards {
@@ -21,4 +32,9 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
+
+
+	@media screen and (max-width:1024px) {
+		flex-direction: column;
+	}
 }

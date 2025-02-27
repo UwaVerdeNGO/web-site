@@ -55,7 +55,7 @@ export function HorizontalCards() {
 						<Card background={isCard3Hovered ? 'purple' : 'black'} spacing='none'>
 							<div className={styles.content}>
 								<div>
-									<h2 className={isCard3Hovered ? styles.cardTextHovered : styles.cardText}>{isCard3Hovered ? "Ready to share your expertise?" : "Share Knowledge"}</h2>
+									<h2 className={isCard3Hovered ? styles.cardTextHovered : styles.cardText}>{isCard3Hovered ? "Share Knowledge" : "Ready to share your expertise?"}</h2>
 									{isCard3Hovered && (
 										<h3 className={styles.cardHoveredSubtitle}>Ready to share your expertise? Become part of our events, workshops, and more to inspire others and drive change.</h3>
 									)}

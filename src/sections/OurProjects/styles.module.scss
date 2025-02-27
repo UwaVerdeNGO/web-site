@@ -23,6 +23,12 @@
 		font-weight: 700;
 		font-size: 34px;
 		line-height: 46px;
+
+		@media screen and (max-width:1024px) {
+			font-size: 20px;
+			line-height: 27px;
+		}
+
 	}
 
 	.cardDescription {
@@ -30,6 +36,11 @@
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 27px;
+
+		@media screen and (max-width:1024px) {
+			font-size: 14px;
+			line-height: 19px;
+		}
 	}
 
 	.cardButton {
@@ -47,6 +58,10 @@
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 22px;
+
+		@media screen and (max-width:1024px) {
+			margin-top: 22px;
+		}
 
 		&:hover {
 			background: $green;

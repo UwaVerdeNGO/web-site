@@ -4,7 +4,7 @@ import { Drawer } from 'components/drawer'
 import HamburguerMenu from "assets/icons/menu.png"
 import { Card } from 'components/card'
 import { Spacer } from 'components/spacer'
-import Logo from "assets/icons/purpleLogo.png"
+import Logo from "assets/icons/logo.png"
 import Login from "assets/icons/login.png"
 import styles from "./styles.module.scss"
 
@@ -65,6 +65,7 @@ export const Header: FC = () => {
 			</Drawer>
 
 			<img src={Logo} alt='UwaVerde Logo' className={styles.logo} />
+
 			<div className={styles.buttons}>
 				<Button href='#' background='outlined' fontSize='small' spacing='smallSpacing'>Sign In</Button>
 				<Button href='#' background='purple' fontSize='small' spacing='smallSpacing'>Donate</Button>

@@ -1,0 +1,10 @@
+.image {
+	width: 100%;
+	border-radius: 20px;
+	margin-bottom: 180px;
+
+	@media screen and (max-width:1024px) {
+		border-radius: 20px;
+		margin-bottom: 77px;
+	}
+}

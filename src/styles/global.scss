@@ -8,6 +8,10 @@ body {
 	margin: 0;
 	background-color: #F8F8F8;
 	overflow-x: hidden;
+
+	@media screen and (max-width:1024px) {
+		background: #ffffff;
+	}
 }
 
 /***** ALIGNMENTS *******/
@@ -30,6 +34,10 @@ body {
 
 .almostWhiteBackground {
 	background: #F8F8F8;
+
+	@media screen and (max-width: 1024px) {
+		background: #ffffff;
+	}
 }
 
 .greenBackground {

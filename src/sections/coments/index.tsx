@@ -16,7 +16,7 @@ export function Comments({ comment, commentatorName, commentatorPosition, profil
 				<div className={styles.wrapper}>
 					<h2 className={styles.comment}>{comment}</h2>
 					<div className={styles.commentOwner}>
-						<img src={profilePhoto} alt={`${commentatorName} photo`} className={styles.photo} />
+						<img src={profilePhoto} alt={`${commentatorName} profile`} className={styles.photo} />
 						<span className={styles.name}>{commentatorName}</span>
 						<span className={styles.position}>{commentatorPosition}</span>
 					</div>

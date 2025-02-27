@@ -14,7 +14,7 @@ type AccordionData = {
 
 export const AccordionComponent: FC<AccordionData> = ({ data }) => {
 	return (
-		<>
+		<div className={styles.wrapper}>
 			<h1 className={styles.sectionTitle}>Our Values</h1>
 			<Accordion flush alwaysOpen>
 				{data.map((item, index) => (
@@ -29,6 +29,6 @@ export const AccordionComponent: FC<AccordionData> = ({ data }) => {
 				))}
 
 			</Accordion>
-		</>
+		</div>
 	);
 }

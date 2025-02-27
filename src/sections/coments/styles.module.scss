@@ -5,6 +5,11 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding-bottom: 200px;
+
+	@media screen and (max-width:1024px) {
+		padding: 0 16px 40px;
+	}
 }
 
 .comment {
@@ -15,6 +20,11 @@
 	text-align: center;
 	color: $defaultTextGray;
 	max-width: 806px;
+
+	@media screen and (max-width:1024px) {
+		font-size: 20px;
+		line-height: 27px;
+	}
 }
 
 .commentOwner {
@@ -24,9 +34,17 @@
 	justify-content: center;
 	margin-top: 36px;
 
+	@media screen and (max-width:1024px) {
+		margin-top: 24px;
+	}
+
 	.photo {
 		width: 80px;
 		margin-bottom: 16px;
+
+		@media screen and (max-width:1024px) {
+			margin-bottom: 8px;
+		}
 	}
 
 	.name {
@@ -35,6 +53,11 @@
 		font-weight: 700;
 		line-height: 32.78px;
 		color: $primaryPurple;
+
+		@media screen and (max-width:1024px) {
+			font-size: 16px;
+			line-height: 22px;
+		}
 	}
 
 	.position {
@@ -43,5 +66,10 @@
 		font-weight: 400;
 		line-height: 32.78px;
 		color: $lightBlack;
+
+		@media screen and (max-width:1024px) {
+			font-size: 16px;
+			line-height: 22px;
+		}
 	}
 }

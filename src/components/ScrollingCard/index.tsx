@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from 'components/buttons/button';
 import styles from "./styles.module.scss"
 
-export const ScalingCard = () => {
+export const ScrollingCard = () => {
 	const [scale, setScale] = useState(1);
 	const [padding, setPadding] = useState(100);
 

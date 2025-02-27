@@ -7,11 +7,14 @@
 	padding: 48px 20px !important;
 	transition: all .3s !important;
 
+	@media screen and (max-width:1024px) {
+		padding: 16px 30px 16px 16px !important;
+	}
+
 	&:not(.collapsed) {
 		padding: 48px 20px 24px !important;
 		transition: all .3s;
 		box-shadow: none !important;
-
 	}
 
 	&:focus {
@@ -30,7 +33,11 @@
 
 .accordion-button::after {
 	background-image: url(../../assets/icons/addIcon.png) !important;
-	margin-right: 3%;
+	margin-right: 0;
+
+	@media screen and (max-width:1024px) {
+		margin-right: 32px;
+	}
 }
 
 .accordion-button:not(.collapsed)::after {

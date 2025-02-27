@@ -6,6 +6,15 @@
 	border-bottom: 0.5px solid #B5B5B5;
 	padding: 30px 48px;
 	background: $white;
+
+	@media screen and (max-width: 1024px) {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		padding: 43px 16px 0;
+		border: none;
+	}
 }
 
 .menu {
@@ -25,6 +34,10 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
+
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
 
 	.drawerLeftContent {
 		font-family: $manrope;
@@ -117,5 +130,9 @@
 
 	:nth-child(2) {
 		margin-left: 16px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		display: none;
 	}
 }

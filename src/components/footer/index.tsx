@@ -18,7 +18,7 @@ export const Footer: FC = () => {
 						</p>
 					</div>
 					<div className={styles.aboutUs}>
-						<div className={styles.aboutUsSections}>
+						{/* <div className={styles.aboutUsSections}>
 							<p>
 								Connect
 							</p>
@@ -45,22 +45,16 @@ export const Footer: FC = () => {
 							<a href='#' target='_blank'>
 								Projects
 							</a>
-						</div>
+						</div> */}
 						<div className={styles.aboutUsSections}>
 							<p>
 								Follow Us
 							</p>
-							<a href='#' target='_blank'>
+							<a href='https://www.linkedin.com/company/uwaverde/' target='_blank' rel="noreferrer">
 								Linkedin
 							</a>
-							<a href='#' target='_blank'>
+							<a href='https://www.instagram.com/uwa.verde/' target='_blank' rel="noreferrer">
 								Instagram
-							</a>
-							<a href='#' target='_blank'>
-								X
-							</a>
-							<a href='#' target='_blank'>
-								Facebook
 							</a>
 						</div>
 					</div>
@@ -70,11 +64,11 @@ export const Footer: FC = () => {
 					<p className={styles.copyRights}>
 						© 2024 UwaVerde. All Rights Reserved.
 					</p>
-					<div className={styles.documents}>
+					{/* <div className={styles.documents}>
 						<a href="#" className={styles.linkToDocument}>Privacy Policy</a>
 						<Spacer width='36px' />
 						<a href="#" className={styles.linkToDocument}> Terms of Use</a>
-					</div>
+					</div> */}
 				</div>
 				<Spacer className={styles.bottomSpacer} />
 			</ContentContainer>

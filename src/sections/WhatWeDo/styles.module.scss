@@ -1,9 +1,25 @@
 @import "../../styles/variables";
 
-.wrapper {
+.desktopWrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	margin-bottom: 304px;
+
+	@media screen and (max-width:1024px) {
+		display: none;
+	}
+}
+
+.mobileContent {
+	display: none;
+
+
+	@media screen and (max-width:1024px) {
+		display: flex;
+		flex-direction: column;
+		margin: 0 16px;
+	}
 }
 
 .steps {
@@ -23,6 +39,13 @@
 	&:hover {
 		color: $defaultTextGray;
 	}
+
+	@media screen and (max-width:1024px) {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 38px;
+		margin-bottom: 9px;
+	}
 }
 
 .tabs {
@@ -36,6 +59,13 @@
 	line-height: 54.64px;
 	color: $defaultTextGray;
 	animation: fadeIn 1s;
+
+	@media screen and (max-width:1024px) {
+		font-size: 20px;
+		line-height: 27px;
+		margin: 0;
+		max-width: 343px;
+	}
 }
 
 .stepsWrapper {
@@ -54,6 +84,12 @@
 	border-radius: 100px;
 	border: 1px solid $lightBlack;
 	margin-bottom: 16px;
+
+	@media screen and (max-width:1024px) {
+		padding: 14px 24px;
+		font-size: 20px;
+		line-height: 27px;
+	}
 }
 
 @keyframes fadeIn {

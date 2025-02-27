@@ -4,6 +4,11 @@
 	max-width: 342px;
 	display: flex;
 	flex-direction: column;
+
+	@media screen and (max-width:1024px) {
+		max-width: 100%;
+		margin-bottom: 40px;
+	}
 }
 
 .imageContainer {
@@ -12,10 +17,18 @@
 	overflow: hidden;
 	border-radius: 20px;
 	position: relative;
+	margin-bottom: 16px;
+
+	@media screen and (max-width:1024px) {
+		width: 343px;
+		height: 182px;
+		border-radius: 10px;
+		margin-bottom: 4px;
+	}
 }
 
 .zoomImage {
-	border-radius: 20px;
+	border-radius: 10px;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -39,6 +52,13 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: $transparentGray;
+	margin-bottom: 8px;
+
+	@media screen and (max-width:1024px) {
+		font-size: 12px;
+		line-height: 16px;
+		margin-bottom: 4px;
+	}
 }
 
 .title {
@@ -47,4 +67,9 @@
 	text-align: left;
 	color: $defaultTextGray;
 	margin: 0;
+
+	@media screen and (max-width:1024px) {
+		font-size: 16px;
+		line-height: 22px;
+	}
 }
