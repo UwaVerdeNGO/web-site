@@ -10,7 +10,8 @@ import { WhatWeDo } from 'sections/WhatWeDo';
 import { Newsletter } from 'sections/Newsletter';
 import { Footer } from 'components/footer';
 import { OurProjects } from 'sections/OurProjects';
-import { Comments } from 'sections/Coments';
+import { Comments } from 'sections/Comments';
+// import { Comments } from './sections/Coments';
 import Silvia from "assets/images/Silvia.png"
 
 function App() {
