@@ -1,5 +1,3 @@
-import { Card } from 'components/card'
-import { ScrollingCard } from 'components/ScrollingCard'
 import styles from "./styles.module.scss"
 import { Button } from 'components/buttons/button'
 

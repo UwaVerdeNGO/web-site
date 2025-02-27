@@ -3,7 +3,6 @@ import { ContentContainer } from 'components/contentSection/contentContainer'
 import Terra from "assets/images/terraTeste.png"
 import styles from "./styles.module.scss"
 import { Button } from 'components/buttons/button'
-import { Spacer } from 'components/spacer'
 
 export function Hero() {
 	return (
