@@ -1,6 +1,6 @@
-import styles from "./styles.module.scss"
 import { ContentContainer } from 'components/contentSection/contentContainer'
 import { ContentSection } from 'components/contentSection'
+import styles from "./styles.module.scss"
 
 type CommentsProps = {
 	comment: string;
