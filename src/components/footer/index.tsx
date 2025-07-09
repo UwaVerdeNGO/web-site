@@ -18,21 +18,21 @@ export const Footer: FC = () => {
 						</p>
 					</div>
 					<div className={styles.aboutUs}>
-						{/* <div className={styles.aboutUsSections}>
+						<div className={styles.aboutUsSections}>
 							<p>
 								Connect
 							</p>
-							<a href='#' target='_blank'>
+							<a href='mailto:admin@uwaverde.com' target='_blank'>
 								Contact Us
 							</a>
-							<a href='#' target='_blank'>
+							{/* <a href='#' target='_blank'>
 								Careers
 							</a>
 							<a href='#' target='_blank'>
 								FAQ
-							</a>
+							</a> */}
 						</div>
-						<div className={styles.aboutUsSections}>
+						{/* <div className={styles.aboutUsSections}>
 							<p>
 								Organization
 							</p>
