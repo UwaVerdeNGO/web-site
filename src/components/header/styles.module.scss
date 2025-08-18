@@ -62,15 +62,21 @@
 			gap: 36px;
 
 			li {
-				font-size: 40px;
-				line-height: 48px;
-				color: #FFFFFF;
-				transition: all .3s;
 				cursor: pointer;
 
-				&:hover {
-					color: $primaryPurple;
+				a {
+					font-size: 40px;
+					line-height: 48px;
+					transition: all .3s;
+					text-decoration: none;
+					color: #FFFFFF;
+
+					&:hover {
+						color: $primaryPurple;
+					}
 				}
+
+
 
 			}
 		}
