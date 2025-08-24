@@ -80,7 +80,9 @@ export const Header: FC = () => {
 				</div>
 			</Drawer>
 
-			<img src={Logo} alt='UwaVerde Logo' className={styles.logo} />
+			<a href="/">
+				<img src={Logo} alt='UwaVerde Logo' className={styles.logo} />
+			</a>
 
 			<div className={styles.buttons}>
 				<Button href='#' background='outlined' fontSize='small' spacing='smallSpacing'>Sign In</Button>
