@@ -1,7 +1,8 @@
 @import "../../styles/variables";
 
 .wrapper {
-	background-color: $defaultTextGray;
+	background-image: url(../../assets/images/NewsLetterBG.png);
+	background-size: cover;
 }
 
 .spacerTop {
