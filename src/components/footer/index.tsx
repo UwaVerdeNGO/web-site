@@ -22,7 +22,7 @@ export const Footer: FC = () => {
 							<p>
 								Connect
 							</p>
-							<a href='mailto:admin@uwaverde.com' target='_blank'>
+							<a href='mailto:admin@uwaverde.com' target='_blank' rel='noreferrer'>
 								Contact Us
 							</a>
 							{/* <a href='#' target='_blank'>
@@ -62,7 +62,7 @@ export const Footer: FC = () => {
 
 				<div className={styles.bottomDivision}>
 					<p className={styles.copyRights}>
-						© 2024 UwaVerde. All Rights Reserved.
+						© 2025 UwaVerde. All Rights Reserved.
 					</p>
 					{/* <div className={styles.documents}>
 						<a href="#" className={styles.linkToDocument}>Privacy Policy</a>

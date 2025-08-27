@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+.title {
+	font-family: $manrope;
+	font-size: 56px;
+	line-height: 76px;
+	font-weight: 500;
+	margin-bottom: 8px;
+	text-align: left;
+	color: $white;
+}
+
+.subtext {
+	font-family: $manrope;
+	font-size: 24px;
+	line-height: 33px;
+	font-weight: 300;
+	margin: 0;
+	max-width: 546px;
+	color: $white;
+}
+
+.contentGrid {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.contentWrapper {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 96px;
+
+	&:last-child {
+		align-items: flex-end;
+		margin: 0;
+	}
+
+	.alignedContent {
+		text-align: left;
+	}
+}

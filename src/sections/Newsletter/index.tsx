@@ -7,7 +7,7 @@ import styles from "./styles.module.scss"
 export function Newsletter() {
 	return (
 		<div className={styles.wrapper}>
-			<ContentSection sectionBackground='greenBackground' style={{ borderRadius: "30px 30px 0 0" }}>
+			<ContentSection style={{ borderRadius: "30px 30px 0 0" }}>
 				<Spacer className={styles.spacerTop} />
 				<ContentContainer>
 					<h2 className={styles.title}>Stay Ahead</h2>

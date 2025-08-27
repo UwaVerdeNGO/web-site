@@ -31,14 +31,30 @@ export const Header: FC = () => {
 						<h2>Menu</h2>
 						<nav role='navigation'>
 							<ul className={styles.drawerMenu}>
-								<li>About Us</li>
-								<li>Our people</li>
-								<li>Projects</li>
-								<li>Eco-learning</li>
-								<li>Collaborate</li>
-								<li>News & events</li>
-								<li>carrers</li>
-								<li>contact</li>
+								<li>
+									<a href="/about-us">About Us</a>
+								</li>
+								<li>
+									<a href="#">Our people</a>
+								</li>
+								<li>
+									<a href="#">Projects</a>
+								</li>
+								<li>
+									<a href="#">Eco-learning</a>
+								</li>
+								<li>
+									<a href="#">Collaborate</a>
+								</li>
+								<li>
+									<a href="#">News & events</a>
+								</li>
+								<li>
+									<a href="#">careers</a>
+								</li>
+								<li>
+									<a href="#">contact</a>
+								</li>
 							</ul>
 						</nav>
 					</div>
@@ -64,7 +80,9 @@ export const Header: FC = () => {
 				</div>
 			</Drawer>
 
-			<img src={Logo} alt='UwaVerde Logo' className={styles.logo} />
+			<a href="/">
+				<img src={Logo} alt='UwaVerde Logo' className={styles.logo} />
+			</a>
 
 			<div className={styles.buttons}>
 				<Button href='#' background='outlined' fontSize='small' spacing='smallSpacing'>Sign In</Button>
