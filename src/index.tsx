@@ -6,27 +6,29 @@ import 'styles/global.scss';
 import { createBrowserRouter } from 'react-router-dom';
 import { RouterProvider } from 'react-router';
 import AboutUs from 'pages/about-us';
+import MemberLogIn from 'pages/MemberLogIn';
 import Home from 'pages/home';
 
 const router = createBrowserRouter([
-	{
-		path: '/',
-		element: <Home />,
-	},
-	{
-		path: '/about-us',
-		element: <AboutUs />,
-	}
+  {
+    path: '/',
+    element: <Home />,
+  },
+  {
+    path: '/about-us',
+    element: <AboutUs />,
+  },
+  { path: '/member-login', element: <MemberLogIn /> },
 ]);
 
 const root = ReactDOM.createRoot(
-	document.getElementById('root') as HTMLElement
+  document.getElementById('root') as HTMLElement
 );
 
 root.render(
-	<React.StrictMode>
-		<RouterProvider router={router} />
-	</React.StrictMode>
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

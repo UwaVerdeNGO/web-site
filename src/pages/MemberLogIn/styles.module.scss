@@ -1,0 +1,177 @@
+.logIn {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url('../../assets/images/backgroundLogIn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+// $color_1: #8e8e93;
+// $color_2: #333333;
+// $color_3: #5856d6;
+// $color_4: #ffffff;
+// $color_5: red;
+
+// $font-family_1: 'Manrope';
+// $font-family_2: inherit;
+
+// $background-color_1: #ffffff;
+// $background-color_2: #c7c7cc;
+
+// @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+// *,
+// *::after,
+// *::before {
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// html {
+//   font-size: 16px;
+//   font-family: $font-family_1;
+// }
+
+// body {
+//   font-size: 16px;
+//   font-family: $font-family_1;
+//   background-image: url('../../assets/images/background-login.png');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-end;
+// }
+
+.formContainer {
+  min-width: 36rem;
+  min-height: 43.25rem;
+  padding: 4.5rem;
+  background-color: #ffffff;
+  margin-right: 10.125rem;
+  border-radius: 0.625rem;
+  box-sizing: border-box;
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.googleButton {
+  margin-top: 2.25rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  border-radius: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  box-sizing: border-box;
+
+  .googleIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.hrText {
+  position: relative;
+  text-align: center;
+
+  hr {
+    border: none;
+    border-top: 1px solid #8e8e93;
+  }
+  .logInSpan {
+    position: absolute;
+    top: -0.8rem;
+    right: 9rem;
+    padding: 0 0.5rem;
+    background-color: #ffffff;
+    color: #8e8e93;
+    margin-left: 0.5rem;
+  }
+}
+
+.formLogIn {
+  margin-top: 2.25rem;
+  display: flex;
+  flex-direction: column;
+
+  .labelLogIn {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333333;
+
+    &:first-child {
+      margin-bottom: 1.5rem;
+    }
+  }
+  .passwordHide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .errorMessage {
+    color: red;
+  }
+
+  .hideIcon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #8e8e93;
+
+    img {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+}
+
+.emailInput,
+.passwordInput {
+  margin-top: 0.5rem;
+  max-height: 3.5rem;
+  border: solid 0.12rem #8e8e93;
+  border-radius: 0.625rem;
+  padding: 1rem;
+}
+.forgotPassword {
+  margin-top: 0.5rem;
+  color: #5856d6;
+  font-weight: 600;
+}
+
+.logInBtn {
+  margin-top: 2.25rem;
+  border: none;
+  border-radius: 1.875rem;
+  background-color: #c7c7cc;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 600;
+  height: 3.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
