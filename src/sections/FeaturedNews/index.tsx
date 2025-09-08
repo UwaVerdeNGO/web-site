@@ -11,7 +11,7 @@ export function FeaturedNews() {
 
 		<ContentSection sectionBackground='almostWhiteBackground'>
 			<ContentContainer>
-				<div className={styles.wrapper}>
+				<div className={styles.wrapper} id="featured-news">
 					<h2 className={styles.title}>Featured News</h2>
 					<div className={styles.cards}>
 						<NewsCard category='blog' imageAlt='Mill' imageSrc={Mill} title='Regenerative Agriculture: A Path to a Sustainable Future' />
