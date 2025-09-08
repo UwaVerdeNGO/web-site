@@ -2,7 +2,7 @@ import Kings from "assets/images/kings.png"
 import Jessica from 'assets/images/jessica.png'
 import Silvia from 'assets/images/SilviaSquare.png'
 import Arthur from 'assets/images/Arthur.jpg'
-
+import Ege from 'assets/images/Ege.jpg'
 export const People = [
 	{
 		name: "Kingsley Okonkwo",
@@ -11,12 +11,12 @@ export const People = [
 	},
 	{
 		name: "Jéssica Groba Represas",
-		role: "Conservation Biologist",
+		role: "Co-Founder and Treasurer",
 		image: Jessica
 	},
 	{
 		name: "Silvia Lawrence",
-		role: "COO",
+		role: "Co-founder and Secretary",
 		image: Silvia
 	},
 	{
@@ -24,9 +24,11 @@ export const People = [
 		role: "Front End Developer",
 		image: Arthur
 	},
-	// {
-	// 	name: "Ege Coskun",
-	// 	role: "Industrial & UX Designer",
-	// 	image: Arthur
-	// }
+	{
+		name: "Ege Coskun",
+		role: "Industrial & UX Designer",
+		image: Ege
+	},
+
+
 ];

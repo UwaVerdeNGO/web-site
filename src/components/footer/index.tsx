@@ -22,7 +22,7 @@ export const Footer: FC = () => {
 							<p>
 								Connect
 							</p>
-							<a href='mailto:admin@uwaverde.com' target='_blank' rel='noreferrer'>
+							<a href='mailto:admin@uwaverde.com' target='_blank' rel='noreferrer' id="contact-us">
 								Contact Us
 							</a>
 							{/* <a href='#' target='_blank'>

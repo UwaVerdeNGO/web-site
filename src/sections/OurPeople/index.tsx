@@ -9,7 +9,7 @@ export function OurPeople() {
 	return (
 		<ContentSection sectionBackground='grayBackground'>
 			<ContentContainer>
-				<div className={styles.wrapper}>
+				<div className={styles.wrapper} id="our-people">
 					<h1 className={styles.title}>Our People</h1>
 
 					<div className={styles.cards}>
