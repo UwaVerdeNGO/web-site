@@ -1,45 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
-	box-sizing: unset;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	background-color: #F8F8F8;
-	overflow-x: hidden;
+  margin: 0;
+  background-color: #f8f8f8;
+  min-width: 100vw;
+  overflow-x: hidden;
 
-	@media screen and (max-width:1024px) {
-		background: #ffffff;
-	}
+  @media screen and (max-width: 1024px) {
+    background: #ffffff;
+  }
 }
 
 /***** ALIGNMENTS *******/
 
 .horizontalAlignCenter {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /***** BACKGROUNDCOLORS *******/
 
 .grayBackground {
-	background: #393939;
+  background: #393939;
 }
 
 .blackBackground {
-	background: #333333;
+  background: #333333;
 }
 
 .almostWhiteBackground {
-	background: #F8F8F8;
+  background: #f8f8f8;
 
-	@media screen and (max-width: 1024px) {
-		background: #ffffff;
-	}
+  @media screen and (max-width: 1024px) {
+    background: #ffffff;
+  }
 }
 
 .greenBackground {
-	background: #40916C;
+  background: #40916c;
 }

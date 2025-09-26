@@ -1,87 +1,88 @@
-@import "../../styles/variables";
-
+@import '../../styles/variables';
 
 .contentWrapper {
-	height: calc(100vh - 215px);
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  height: calc(100vh - 215px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-	@media screen and (max-width: 1024px) {
-		display: flex;
-		flex-direction: column-reverse;
-		align-items: center;
-		height: 100%;
-	}
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 660px) {
+    padding-left: 16px;
+    width: 100%;
+  }
 }
 
 .mobileButton {
-	display: none;
+  display: none;
 
-	@media screen and (max-width: 1024px) {
-		display: flex;
-		width: 100%;
-		margin: 0 0 68px 16px;
-	}
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    width: 100%;
+    margin: 0 0 68px 16px;
+  }
 }
 
 .leftContent {
-	// padding: 133px 0 107px;
-	width: 50%;
+  // padding: 133px 0 107px;
+  width: 50%;
 
-	@media screen and (max-width: 1024px) {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		padding: 11px 0 0 16px;
-	}
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 11px 0 0 16px;
+  }
 
-	h2 {
-		font-family: $manrope;
-		font-weight: 700;
-		font-size: 80px;
-		line-height: 95px;
-		max-width: 398px;
-		color: $defaultTextGray;
-		text-transform: uppercase;
-		margin: 0;
+  h2 {
+    font-family: $manrope;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 95px;
+    max-width: 398px;
+    color: $defaultTextGray;
+    text-transform: uppercase;
+    margin: 0;
 
-		@media screen and (max-width: 1024px) {
-			font-size: 50px;
-			line-height: 59px;
-			// max-width: 288px;
-		}
-	}
+    @media screen and (max-width: 1024px) {
+      font-size: 50px;
+      line-height: 59px;
+      // max-width: 288px;
+    }
+  }
 
-	h3 {
-		font-family: $manrope;
-		font-weight: 400;
-		font-size: 20px;
-		line-height: 28px;
-		max-width: 398px;
-		margin: 8px 0 24px;
-		color: $defaultTextGray;
+  h3 {
+    font-family: $manrope;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 398px;
+    margin: 8px 0 24px;
+    color: $defaultTextGray;
 
-		@media screen and (max-width: 1024px) {
-			font-size: 16px;
-			line-height: 22px;
-			max-width: 326px;
-		}
-	}
-
-
-
+    @media screen and (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 22px;
+      max-width: 326px;
+    }
+  }
 }
 
 .rightContent {
-	width: 50%;
+  width: 50%;
 
-	img {
-		width: 100%;
-	}
+  img {
+    width: 100%;
+  }
 
-	@media screen and (max-width: 1024px) {
-		width: 251px;
-		margin: 0 auto;
-	}
+  @media screen and (max-width: 1024px) {
+    width: 251px;
+    margin: 0 auto;
+  }
 }
