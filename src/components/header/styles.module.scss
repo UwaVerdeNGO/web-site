@@ -22,7 +22,9 @@
     align-items: center;
   }
 
- 
+  @media screen and (max-width: 660px) {
+    margin-bottom: 20px;
+  }
 }
 
 .menu {
@@ -33,10 +35,6 @@
 
   img {
     width: 40px;
-  }
-
-  @media screen and (max-width: 660px) {
-    padding-right: 16px;
   }
 }
 
@@ -110,17 +108,23 @@
     }
 
     .memberPortalCard {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       padding: 48px;
-
-      h2 {
-        margin: 0;
+      a {
+        text-decoration: none;
+        // color: inherit;
       }
+      .memberPortalBtn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2 {
+          margin: 0;
+          text-decoration: none;
+        }
 
-      img {
-        width: 40px;
+        img {
+          width: 40px;
+        }
       }
     }
   }
@@ -154,8 +158,9 @@
     flex-direction: column;
 
     .drawerLeftContent {
+      width: 100%;
       .drawerMenu {
-        gap: 24px;
+        gap: 8px;
         li {
           a {
             font-size: 24px;
@@ -164,7 +169,8 @@
       }
     }
     .drawerRightContent {
-      width: 50%;
+      width: 100%;
+      margin: 10px 0;
       margin-left: 10%;
       .hideCardForMobile {
         background: none;
@@ -177,6 +183,7 @@
 
         .cardButtonWrapper {
           width: 150px;
+          margin: 20px 0;
         }
 
         .drawerCardText {
@@ -185,6 +192,11 @@
 
         .memberPortalCard {
           padding: 0;
+          .memberPortalBtn {
+            justify-content: flex-start;
+            margin-top: 10px;
+          }
+
           img {
             width: 32px;
           }

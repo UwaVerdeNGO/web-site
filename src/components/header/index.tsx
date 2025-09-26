@@ -65,8 +65,8 @@ export const Header: FC = () => {
               className={styles.hideCardForMobile}
             >
               <h2 className={styles.drawerCardTextTagline}>
-                Organic make boys slipstream office diarize level bandwagon.
-                Shower mint boys win-win?
+                We spend billions fighting wildfires, but not enough preventing
+                them. Are we prioritizing properly?
               </h2>
               <div className={styles.cardButtonWrapper}>
                 <Button
@@ -87,8 +87,14 @@ export const Header: FC = () => {
               className={styles.hideCardForMobile}
             >
               <div className={styles.memberPortalCard}>
-                <h2 className={styles.drawerCardText}>Member Portal</h2>
-                <img src={Login} alt="Login" />
+                <a
+                  href="/member-login"
+                  role="button"
+                  className={styles.memberPortalBtn}
+                >
+                  <h2 className={styles.drawerCardText}>Member Portal</h2>
+                  <img src={Login} alt="Login" />
+                </a>
               </div>
             </Card>
           </div>
