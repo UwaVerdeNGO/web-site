@@ -1,24 +1,36 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 .wrapper {
-	padding: 166px 0 155px
+  padding: 166px 0 155px;
 }
 
 .title {
-	font-family: $manrope;
-	font-weight: 600;
-	font-size: 56px;
-	line-height: 76px;
-	margin-bottom: 81px;
-	color: $white;
+  font-family: $manrope;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 76px;
+  margin-bottom: 81px;
+  color: $white;
 }
 
 .cards {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
-	gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+  gap: 20px;
 
-	@media screen and (max-width: 768px) {
-		grid-template-columns: 1fr;
-	}
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    padding: 0 27.5px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .wrapper {
+    padding: 48px 0;
+  }
+  .title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
 }

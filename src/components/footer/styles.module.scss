@@ -1,126 +1,126 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 .wrapper {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .topSpacer {
-	height: 92px;
+  height: 92px;
 }
 
 .bottomSpacer {
-	height: 62px;
+  height: 62px;
 }
 
 .topDivision {
-	display: flex;
-	align-items: center;
-	margin-bottom: 94px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 94px;
 
-	@media screen and (max-width:1024px) {
-		flex-direction: column;
-		align-items: flex-start;
-		margin: 0;
-	}
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
 
-	.info {
-		margin-right: 135px;
+  .info {
+    margin-right: 135px;
 
-		@media screen and (max-width:1024px) {
-			margin: 0 16px 32px;
-		}
+    @media screen and (max-width: 1024px) {
+      margin: 0 16px 32px;
+    }
 
-		.logo {
-			width: 190px;
-			margin-bottom: 3px;
-		}
+    .logo {
+      width: 190px;
+      margin-bottom: 3px;
+    }
 
-		.address {
-			font-family: $manrope;
-			font-size: 16px;
-			font-weight: 500;
-			line-height: 21.86px;
-			text-align: left;
-			color: $white;
-		}
-	}
+    .address {
+      font-family: $manrope;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21.86px;
+      text-align: left;
+      color: $white;
+    }
+  }
 
-	.aboutUs {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+  .aboutUs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-		@media screen and (max-width:1024px) {
-			margin: 0 16px 32px;
-		}
+    @media screen and (max-width: 1024px) {
+      margin: 0 16px 32px;
+    }
 
-		.aboutUsSections {
-			display: flex;
-			flex-direction: column;
-			margin-right: 80px;
+    .aboutUsSections {
+      display: flex;
+      flex-direction: column;
+      margin-right: 80px;
 
-			p {
-				font-family: $manrope;
-				font-size: 16px;
-				font-weight: 700;
-				line-height: 18.96px;
-				text-align: left;
-				margin: 0 0 4px 0;
-				color: $white
-			}
+      p {
+        font-family: $manrope;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.96px;
+        text-align: left;
+        margin: 0 0 4px 0;
+        color: $white;
+      }
 
-			a {
-				font-family: $manrope;
-				font-size: 16px;
-				font-weight: 500;
-				line-height: 21.86px;
-				text-align: left;
-				margin: 4px 0;
-				text-decoration: none;
-				transition: all .3s;
-				color: $white;
+      a {
+        font-family: $manrope;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.86px;
+        text-align: left;
+        margin: 4px 0;
+        text-decoration: none;
+        transition: all 0.3s;
+        color: $white;
 
-				&:hover {
-					color: $lightBlack;
-				}
-			}
-		}
-	}
+        &:hover {
+          color: $lightBlack;
+        }
+      }
+    }
+  }
 }
 
 .bottomDivision {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-	.copyRights {
-		font-family: $manrope;
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 21.86px;
-		color: $white;
-		margin: 0;
+  .copyRights {
+    font-family: $manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.86px;
+    color: $white;
+    margin: 0;
 
-		@media screen and (max-width:1024px) {
-			margin: 106px 16px 0;
-		}
-	}
+    @media screen and (max-width: 1024px) {
+      margin: 106px 16px 0;
+    }
+  }
 
-	.documents {
-		display: flex;
-		align-items: center;
+  .documents {
+    display: flex;
+    align-items: center;
 
-		.linkToDocument {
-			font-family: $manrope;
-			font-size: 16px;
-			font-weight: 400;
-			line-height: 21.86px;
-			color: $white;
+    .linkToDocument {
+      font-family: $manrope;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21.86px;
+      color: $white;
 
-			&:hover {
-				color: $lightBlack;
-			}
-		}
-	}
+      &:hover {
+        color: $lightBlack;
+      }
+    }
+  }
 }

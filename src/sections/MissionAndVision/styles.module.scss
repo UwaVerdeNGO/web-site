@@ -1,41 +1,60 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 .title {
-	font-family: $manrope;
-	font-size: 56px;
-	line-height: 76px;
-	font-weight: 500;
-	margin-bottom: 8px;
-	text-align: left;
-	color: $white;
+  font-family: $manrope;
+  font-size: 56px;
+  line-height: 76px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-align: left;
+  color: $white;
 }
 
 .subtext {
-	font-family: $manrope;
-	font-size: 24px;
-	line-height: 33px;
-	font-weight: 300;
-	margin: 0;
-	max-width: 546px;
-	color: $white;
+  font-family: $manrope;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  margin: 0;
+  max-width: 546px;
+  color: $white;
 }
 
 .contentGrid {
-	display: grid;
-	grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .contentWrapper {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 96px;
 
-	&:last-child {
-		align-items: flex-end;
-		margin: 0;
-	}
+  &:last-child {
+    align-items: flex-end;
+    margin: 0;
+  }
 
-	.alignedContent {
-		text-align: left;
-	}
+  .alignedContent {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .spacerSection {
+    height: 50px !important;
+  }
+  .title,
+  .subtext {
+    padding: 0 16px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .subtext {
+    font-size: 20px;
+  }
+  .contentWrapper {
+    margin-bottom: 48px;
+  }
 }

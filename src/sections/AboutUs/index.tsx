@@ -8,7 +8,7 @@ export const AboutUs: React.FC = () => {
 	return (
 		<ContentSection sectionBackground='almostWhiteBackground'>
 			<ContentContainer>
-				<Spacer height='47px' />
+				<Spacer height='47px' className={styles.spacerSection}/>
 				<span className={styles.littleTitle}>About Us</span>
 				<h2 className={styles.title} >
 					We provide valuable resources, create opportunities for collaboration, and build a strong community focused on protecting the environment.

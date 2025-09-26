@@ -10,6 +10,11 @@
 	@media screen and (max-width:1024px) {
 		padding: 0 16px 40px;
 	}
+	@media screen and (max-width: 660px) {
+  width: 100%;
+	padding-left: 25px;
+	padding-right: 16px;
+  }
 }
 
 .comment {
