@@ -1,41 +1,41 @@
 @import '../../styles/variables';
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 197px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 197px;
 
-  @media screen and (max-width: 1024px) {
-    padding: 0 16px 29px 16px;
-  }
-  @media screen and (max-width: 660px) {
-    padding-left: 40px;
-  }
+	@media screen and (max-width: 1024px) {
+		padding: 0 16px 29px 16px;
+	}
+
+	@media screen and (max-width: 660px) {
+		padding-left: 40px;
+	}
 }
 
 .title {
-  font-family: $manrope;
-  font-size: 56px;
-  font-weight: 600;
-  line-height: 66.36px;
-  margin-bottom: 56px;
-  color: $defaultTextGray;
+	font-family: $manrope;
+	font-size: 56px;
+	font-weight: 600;
+	line-height: 66.36px;
+	margin-bottom: 56px;
+	color: $defaultTextGray;
 
-  @media screen and (max-width: 1024px) {
-    font-size: 28px;
-    line-height: 38px;
-    margin-bottom: 19px;
-  }
+	@media screen and (max-width: 1024px) {
+		font-size: 28px;
+		line-height: 38px;
+		margin-bottom: 19px;
+	}
 }
 
 .cards {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100%;
 
-  @media screen and (max-width: 1024px) {
-    flex-direction: column;
-  }
+	@media screen and (max-width: 1024px) {
+		grid-template-columns: 1fr;
+	}
 }
