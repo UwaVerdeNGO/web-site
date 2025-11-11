@@ -11,26 +11,31 @@ import { Newsletter } from 'sections/Newsletter';
 import { Footer } from 'components/footer';
 import { OurProjects } from 'sections/OurProjects';
 import { Comments } from 'sections/Comments';
-import Silvia from "assets/images/Silvia.png"
+import Silvia from 'assets/images/Silvia.png';
 
 function Home() {
-	return (
-		<div style={{ overflowX: '-moz-hidden-unscrollable' }}>
-			<Header />
-			<Hero />
-			<LeadCapture />
-			<WhatWeDo />
-			<HorizontalCards />
-			<OurValues />
-			<ImageSection />
-			<OurProjects />
-			<FeaturedNews />
-			<Comments comment={`"Learn as you grow, grow as you learn – that's what UwaVerde offers. It's a chance to be part of a meaningful effort for a sustainable future, while simultaneously growing knowledge and skills through collaborative learning."`} commentatorName='Silvia Prodanova' commentatorPosition='CCO' profilePhoto={Silvia} />
-			<ClimateIsChanging />
-			<Newsletter />
-			<Footer />
-		</div>
-	);
+  return (
+    <div style={{ overflowX: '-moz-hidden-unscrollable' }}>
+      <Header />
+      <Hero />
+      <LeadCapture />
+      <OurValues />
+      <WhatWeDo />
+      <HorizontalCards />
+      <ImageSection />
+      <OurProjects />
+      <FeaturedNews />
+      <Comments
+        comment={`"Learn as you grow, grow as you learn – that's what UwaVerde offers. It's a chance to be part of a meaningful effort for a sustainable future, while simultaneously growing knowledge and skills through collaborative learning."`}
+        commentatorName="Silvia Prodanova"
+        commentatorPosition="CCO"
+        profilePhoto={Silvia}
+      />
+      <ClimateIsChanging />
+      <Newsletter />
+      <Footer />
+    </div>
+  );
 }
 
 export default Home;
