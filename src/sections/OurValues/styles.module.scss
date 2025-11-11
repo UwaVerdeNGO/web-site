@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+.table {
+  width: 100%;
+}
+.tableRow {
+  border-bottom: 1px solid $lightGray;
+  border-top: 1px solid $lightGray;
+  height: 204px;
+  padding: 48px;
+  font-family: $manrope;
+}
+@media only screen and (max-width: 1920px) {
+  .ourValueContainer {
+    padding: 0 28px;
+    margin-bottom: 200px;
+  }
+  .valueTitle {
+    font-family: $manrope;
+    font-size: 28px;
+    font-weight: 700;
+    color: $defaultTextGray;
+    margin-bottom: 36px;
+  }
+  .bulletNum {
+    width: 320px;
+    color: $lightBlack;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .headerData {
+    width: 960px;
+    font-size: 36px;
+    font-weight: 700;
+    color: $defaultTextGray;
+  }
+  .bodyData {
+    width: 640px;
+    font-size: 20px;
+    font-weight: 400;
+    color: $defaultTextGray;
+  }
+}
