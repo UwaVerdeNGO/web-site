@@ -10,7 +10,7 @@ export function OurValues() {
         <table className={styles.table}>
           <tbody>
             {data.map((item) => (
-              <tr className={styles.tableRow}>
+              <tr className={styles.tableRow} key={item.id}>
                 <td className={styles.bulletNum}>{item.id}</td>
                 <td className={styles.headerData}>{item.header}</td>
                 <td className={styles.bodyData}>{item.body}</td>
