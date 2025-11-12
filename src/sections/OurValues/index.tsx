@@ -7,15 +7,17 @@ export function OurValues() {
     <>
       <div className={styles.ourValueContainer}>
         <h2 className={styles.valueTitle}>Our Values</h2>
-        {data.map((item) => (
-          <table className={styles.table}>
-            <tr className={styles.tableRow}>
-              <td className={styles.bulletNum}>{item.id}</td>
-              <td className={styles.headerData}>{item.header}</td>
-              <td className={styles.bodyData}>{item.body}</td>
-            </tr>
-          </table>
-        ))}
+        <table className={styles.table}>
+          <tbody>
+            {data.map((item) => (
+              <tr className={styles.tableRow}>
+                <td className={styles.bulletNum}>{item.id}</td>
+                <td className={styles.headerData}>{item.header}</td>
+                <td className={styles.bodyData}>{item.body}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </>
   );
