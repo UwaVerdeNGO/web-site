@@ -6,6 +6,9 @@
   border-bottom: 0.5px solid #b5b5b5;
   padding: 30px 48px;
   background: $white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 
   @media screen and (max-width: 1023px) {
     display: flex;
@@ -24,6 +27,8 @@
 
   @media screen and (max-width: 660px) {
     margin-bottom: 20px;
+  }
+  @media screen and (max-width: 1920px) {
   }
 }
 
