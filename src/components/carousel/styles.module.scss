@@ -23,9 +23,6 @@
     margin-top: -90px;
     padding: 0 20px;
   }
-  @media screen and (max-width: 660px) {
-    // margin-top: -150px;
-  }
 }
 
 .carouselCard {
@@ -39,7 +36,7 @@
 
   &.active {
     opacity: 1;
-    z-index: 2;
+    // z-index: 1;
     background-color: $green;
     color: $white;
 
@@ -91,7 +88,7 @@
     width: 100%;
     top: 77%;
   }
-  @media screen and (max-width:660px){
+  @media screen and (max-width: 660px) {
     margin-top: 40px;
   }
 
