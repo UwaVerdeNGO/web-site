@@ -1,97 +1,102 @@
 @import '../../styles/variables';
 
 .wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin-bottom: 168px;
-	gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin-bottom: 168px;
+  gap: 40px;
 
-	@media screen and (max-width: 1024px) {
-		grid-template-columns: 1fr;
-		gap: 32px;
-		margin: 0 16px;
-	}
+  @media screen and (max-width: 1920px) {
+    padding: 0 28px;
+    gap: 10px;
+  }
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin: 0 16px;
+  }
 
-	@media screen and (max-width:660px) {
-		margin-bottom: 76px;
-	}
+  @media screen and (max-width: 660px) {
+    margin-bottom: 76px;
+  }
 }
 
 .content {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 0 36px;
-	max-width: 372px;
-	height: 348px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 36px;
+  max-width: 372px;
+  height: 348px;
 
-	@media screen and (max-width: 1024px) {
-		width: 100%;
-		height: 278px !important;
-	}
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 278px !important;
+  }
 }
 
 .cardText {
-	font-family: $manrope;
-	font-size: 34px;
-	font-weight: 400;
-	line-height: 46.44px;
-	text-align: left;
-	max-width: 300px;
-	margin-top: 36px;
-	color: $white;
-	transition: all 0.3s;
+  font-family: $manrope;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 46.44px;
+  text-align: left;
+  max-width: 300px;
+  margin-top: 36px;
+  color: $white;
+  transition: all 0.3s;
 
-	@media screen and (max-width: 1024px) {
-		font-size: 28px;
-		line-height: 38px;
-	}
+  @media screen and (max-width: 1024px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 
 .cardTextHovered {
-	font-family: $manrope;
-	font-size: 28px;
-	font-weight: 700;
-	line-height: 33px;
-	margin-top: 36px;
-	transition: all 0.3s;
-	color: $white;
+  font-family: $manrope;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33px;
+  margin-top: 36px;
+  transition: all 0.3s;
+  color: $white;
 }
 
 .cardHoveredSubtitle {
-	font-family: $manrope;
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 27px;
-	margin: 16px 0 0 0 !important;
-	color: $white;
-	transition: all 0.3s;
+  font-family: $manrope;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 16px 0 0 0 !important;
+  color: $white;
+  transition: all 0.3s;
 
-	@media screen and (max-width: 660px) {
-		font-size: 18px;
-		width: 100%;
-	}
+  @media screen and (max-width: 660px) {
+    font-size: 18px;
+    width: 100%;
+  }
 }
 
 .arrowButton {
-	background: $white;
-	border-radius: 50%;
-	padding: 8px;
-	width: 56px;
-	margin: 0 0 36px 0 !important;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid $white;
-	transition: all 0.3s;
+  background: $white;
+  border-radius: 50%;
+  padding: 8px;
+  width: 56px;
+  margin: 0 0 36px 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $white;
+  transition: all 0.3s;
 
-	&:hover {
-		background: none;
-		border-color: $white;
-	}
+  &:hover {
+    background: none;
+    border-color: $white;
+  }
 
-	img {
-		transition: all 1s;
-		width: 100%;
-	}
+  img {
+    transition: all 1s;
+    width: 100%;
+  }
 }
