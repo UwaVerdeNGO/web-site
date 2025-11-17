@@ -18,9 +18,9 @@ function Home() {
     <div style={{ overflowX: '-moz-hidden-unscrollable' }}>
       <Header />
       <Hero />
-      <LeadCapture />
-      <OurValues />
+      {/* <LeadCapture /> */}
       <WhatWeDo />
+      <OurValues />
       <HorizontalCards />
       <ImageSection />
       <OurProjects />
