@@ -1,10 +1,13 @@
 @import '../../styles/variables';
 
 .contentWrapper {
-  height: calc(100vh - 215px);
+  // height: calc(100vh - 215px);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 28px;
+  padding-top: 115px;
+  height: 984px;
 
   @media screen and (max-width: 1024px) {
     display: flex;
@@ -18,71 +21,101 @@
     width: 100%;
   }
 }
-
-.mobileButton {
-  display: none;
-
-  @media screen and (max-width: 1024px) {
-    display: flex;
-    width: 100%;
-    margin: 0 0 68px 16px;
-  }
+.heroImgContainer {
+  width: 100%;
+  background-image: url('./../../assets/images/hero-1920.png');
+  background-repeat: no-repeat;
+  background-size: 1864px 984px;
+  background-position: center;
+  height: 984px;
+  margin-top: 115px;
+  border-radius: 20px;
+  position: relative;
 }
-
-.leftContent {
-  // padding: 133px 0 107px;
-  width: 50%;
-
-  @media screen and (max-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 11px 0 0 16px;
-  }
-
-  h2 {
-    font-family: $manrope;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 95px;
-    max-width: 398px;
-    color: $defaultTextGray;
-    text-transform: uppercase;
-    margin: 0;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 50px;
-      line-height: 59px;
-      // max-width: 288px;
-    }
-  }
-
-  h3 {
-    font-family: $manrope;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    max-width: 398px;
-    margin: 8px 0 24px;
-    color: $defaultTextGray;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 16px;
-      line-height: 22px;
-      max-width: 326px;
-    }
-  }
+.heroPara {
+  color: $white;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 548px;
 }
-
-.rightContent {
-  width: 50%;
-
-  img {
-    width: 100%;
-  }
-
-  @media screen and (max-width: 1024px) {
-    width: 251px;
-    margin: 0 auto;
-  }
+.heroHeading {
+  color: $white;
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 150px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 640px;
+  left: 50px;
 }
+// .mobileButton {
+//   display: none;
+
+//   @media screen and (max-width: 1024px) {
+//     display: flex;
+//     width: 100%;
+//     margin: 0 0 68px 16px;
+//   }
+// }
+
+// .leftContent {
+//   // padding: 133px 0 107px;
+//   width: 50%;
+
+//   @media screen and (max-width: 1024px) {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     padding: 11px 0 0 16px;
+//   }
+
+//   h2 {
+//     font-family: $manrope;
+//     font-weight: 700;
+//     font-size: 80px;
+//     line-height: 95px;
+//     max-width: 398px;
+//     color: $defaultTextGray;
+//     text-transform: uppercase;
+//     margin: 0;
+
+//     @media screen and (max-width: 1024px) {
+//       font-size: 50px;
+//       line-height: 59px;
+//       // max-width: 288px;
+//     }
+//   }
+
+//   h3 {
+//     font-family: $manrope;
+//     font-weight: 400;
+//     font-size: 20px;
+//     line-height: 28px;
+//     max-width: 398px;
+//     margin: 8px 0 24px;
+//     color: $defaultTextGray;
+
+//     @media screen and (max-width: 1024px) {
+//       font-size: 16px;
+//       line-height: 22px;
+//       max-width: 326px;
+//     }
+//   }
+// }
+
+// .rightContent {
+//   width: 50%;
+
+//   img {
+//     width: 100%;
+//   }
+
+//   @media screen and (max-width: 1024px) {
+//     width: 251px;
+//     margin: 0 auto;
+//   }
+// }
