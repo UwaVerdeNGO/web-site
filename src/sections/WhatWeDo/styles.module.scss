@@ -1,102 +1,178 @@
 @import '../../styles/variables';
 
-.desktopWrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 304px;
-
-  @media screen and (max-width: 1024px) {
-    display: none;
-  }
+.contentWrapper {
+  width: 100%;
+  padding: 0 28px;
+  margin-bottom: 370px;
 }
-
-.mobileContent {
-  display: none;
-
-  @media screen and (max-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-    margin: 0 16px;
-  }
-}
-
-.steps {
-  font-family: $manrope;
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 33.18px;
-  text-transform: uppercase;
-  transition: all 0.3s;
-  cursor: pointer;
-  color: $lightBlack;
-
-  &.active {
-    color: $defaultTextGray;
-  }
-
-  &:hover {
-    color: $defaultTextGray;
-  }
-
-  @media screen and (max-width: 1024px) {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 38px;
-    margin-bottom: 9px;
-  }
-}
-
-.tabs {
-  width: 708px;
-}
-
-.stepsTexts {
-  font-family: $manrope;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 54.64px;
-  color: $defaultTextGray;
-  animation: fadeIn 1s;
-
-  @media screen and (max-width: 1024px) {
-    font-size: 20px;
-    line-height: 27px;
-    margin: 0;
-    max-width: 343px;
-  }
-}
-
-.stepsWrapper {
+.whatWeDo {
   display: flex;
   flex-direction: column;
-  animation: fadeIn 1s;
+  align-items: center;
+  margin-bottom: 223px;
 }
-
-.areasOfWorf {
+.title {
+  font-family: $manrope;
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 600;
+}
+.para {
+  font-family: $manrope;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 50px;
+  width: 922px;
+  text-align: center;
+}
+.areaWork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.areaTitle {
+  font-family: $manrope;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  margin-bottom: 28px;
+}
+.carousel {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.itemGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  animation: spin 40s infinite linear;
+  padding-right: 24px;
+}
+.workItem {
+  width: 400px;
+  height: 80px;
+  border: 0.5px solid $lightBlack;
+  border-radius: 100px;
+  padding: 16px;
   font-family: $manrope;
   font-size: 28px;
   font-weight: 400;
-  line-height: 38px;
-  color: $defaultTextGray;
-  padding: 16px 26px;
-  border-radius: 100px;
-  border: 1px solid $lightBlack;
-  margin-bottom: 16px;
-
-  @media screen and (max-width: 1024px) {
-    padding: 14px 24px;
-    font-size: 20px;
-    line-height: 27px;
+  text-align: center;
+  align-content: center;
+  flex: 0 0 400px;
+}
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+// .desktopWrapper {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: flex-start;
+//   margin-bottom: 304px;
 
-  100% {
-    opacity: 1;
-  }
-}
+//   @media screen and (max-width: 1024px) {
+//     display: none;
+//   }
+// }
+
+// .mobileContent {
+//   display: none;
+
+//   @media screen and (max-width: 1024px) {
+//     display: flex;
+//     flex-direction: column;
+//     margin: 0 16px;
+//   }
+// }
+
+// .steps {
+//   font-family: $manrope;
+//   font-size: 28px;
+//   font-weight: 600;
+//   line-height: 33.18px;
+//   text-transform: uppercase;
+//   transition: all 0.3s;
+//   cursor: pointer;
+//   color: $lightBlack;
+
+//   &.active {
+//     color: $defaultTextGray;
+//   }
+
+//   &:hover {
+//     color: $defaultTextGray;
+//   }
+
+//   @media screen and (max-width: 1024px) {
+//     font-size: 20px;
+//     font-weight: 700;
+//     line-height: 38px;
+//     margin-bottom: 9px;
+//   }
+// }
+
+// .tabs {
+//   width: 708px;
+// }
+
+// .stepsTexts {
+//   font-family: $manrope;
+//   font-size: 40px;
+//   font-weight: 400;
+//   line-height: 54.64px;
+//   color: $defaultTextGray;
+//   animation: fadeIn 1s;
+
+//   @media screen and (max-width: 1024px) {
+//     font-size: 20px;
+//     line-height: 27px;
+//     margin: 0;
+//     max-width: 343px;
+//   }
+// }
+
+// .stepsWrapper {
+//   display: flex;
+//   flex-direction: column;
+//   animation: fadeIn 1s;
+// }
+
+// .areasOfWorf {
+//   font-family: $manrope;
+//   font-size: 28px;
+//   font-weight: 400;
+//   line-height: 38px;
+//   color: $defaultTextGray;
+//   padding: 16px 26px;
+//   border-radius: 100px;
+//   border: 1px solid $lightBlack;
+//   margin-bottom: 16px;
+
+//   @media screen and (max-width: 1024px) {
+//     padding: 14px 24px;
+//     font-size: 20px;
+//     line-height: 27px;
+//   }
+// }
+
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+//   }
+
+//   100% {
+//     opacity: 1;
+//   }
+// }
