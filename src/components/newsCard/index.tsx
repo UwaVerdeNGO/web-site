@@ -6,7 +6,6 @@ type NewsCardProps = {
   imageAlt: string;
   title: string;
   category: string;
-
   date: string;
 };
 export const NewsCard: React.FC<NewsCardProps> = ({
@@ -14,7 +13,6 @@ export const NewsCard: React.FC<NewsCardProps> = ({
   imageSrc,
   title,
   imageAlt,
-
   date,
 }) => {
   return (

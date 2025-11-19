@@ -1,8 +1,10 @@
 @import '../../styles/variables';
 
 .wrapper {
-  display: flex;
-  align-items: center;
+  width: 100%;
+
+  padding: 0 28px 16px 28px;
+  background-color: $defaultTextGray;
 }
 
 .topSpacer {
@@ -15,84 +17,113 @@
 
 .topDivision {
   display: flex;
-  align-items: center;
-  margin-bottom: 94px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 249px;
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
   }
-
-  .info {
-    margin-right: 135px;
-
-    @media screen and (max-width: 1024px) {
-      margin: 0 16px 32px;
-    }
-
-    .logo {
-      width: 190px;
-      margin-bottom: 3px;
-    }
-
-    .address {
-      font-family: $manrope;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 21.86px;
-      text-align: left;
-      color: $white;
-    }
+}
+.stayTitle {
+  font-family: $manrope;
+  font-weight: 600;
+  font-size: 80px;
+  color: $white;
+}
+.newsInfo {
+  font-family: $manrope;
+  font-weight: 400;
+  font-size: 24px;
+  color: $white;
+}
+.inputContainer {
+  position: relative;
+}
+.inputEmail {
+  width: 525px;
+  height: 59px;
+  background-color: $mediumGray;
+  border: none;
+  border-radius: 100px;
+  padding: 20px;
+  &::placeholder {
+    font-family: $manrope;
+    font-weight: 500;
+    font-size: 20px;
+    color: $lightGray;
   }
+}
+.emailBtn {
+  width: 55px;
+  height: 55px;
+  background-color: $green;
+  border: none;
+  border-radius: 100px;
+  padding: 12px;
+  position: absolute;
+  right: 1px;
+}
+.arrowImg {
+  width: 32px;
+  height: 32px;
+}
 
-  .aboutUs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @media screen and (max-width: 1024px) {
-      margin: 0 16px 32px;
-    }
-
-    .aboutUsSections {
-      display: flex;
-      flex-direction: column;
-      margin-right: 80px;
-
-      p {
-        font-family: $manrope;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 18.96px;
-        text-align: left;
-        margin: 0 0 4px 0;
-        color: $white;
-      }
-
-      a {
-        font-family: $manrope;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 21.86px;
-        text-align: left;
-        margin: 4px 0;
-        text-decoration: none;
-        transition: all 0.3s;
-        color: $white;
-
-        &:hover {
-          color: $lightBlack;
-        }
-      }
-    }
-  }
+.topRightDivision {
+  display: flex;
+  gap: 112px;
+}
+.contact,
+.connect,
+.discover {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contactTitle,
+.connectTitle,
+.discoverTitle {
+  font-family: $rubik;
+  font-weight: 700;
+  font-size: 20px;
+  color: $white;
+}
+.contactDetails,
+.connectDetails,
+.discoverDetails {
+  font-family: $manrope;
+  font-weight: 400;
+  font-size: 20px;
+  color: $white;
+  text-decoration: none;
 }
 
 .bottomDivision {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+
+  .logo {
+    width: 905px;
+    height: 310px;
+    margin-bottom: 16px;
+  }
+  .copyRightsSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .policyContainer {
+    display: flex;
+    gap: 60px;
+  }
+  .policyLink {
+    font-family: $manrope;
+    font-weight: 400;
+    font-size: 16px;
+    color: $white;
+  }
 
   .copyRights {
     font-family: $manrope;
