@@ -1,8 +1,7 @@
-import Banner from 'assets/images/banner.png';
+import Banner from 'assets/images/about-banner.png';
 import { Header } from 'components/header';
 import { Footer } from 'components/footer';
 import { Spacer } from 'components/spacer';
-import { AboutUs } from 'sections/AboutUs';
 import { MissionAndVision } from 'sections/MissionAndVision';
 import styles from './styles.module.scss';
 import { OurValues } from 'sections/OurValues';
@@ -16,15 +15,20 @@ function AboutUsPage() {
       <Header />
       <div className={styles.banner}>
         <img src={Banner} alt="Green area with a river in the middle" />
+        <div className={styles.aboutUsSection}>
+          <h2 className={styles.title}>About Us</h2>
+          <p className={styles.about}>
+            We provide valuable resources, create opportunities for
+            collaboration, and build a strong community focused on protecting
+            the environment.
+          </p>
+        </div>
       </div>
-
-      <AboutUs />
       <MissionAndVision />
       <Spacer height="90px" className={styles.spacerSection} />
       <OurValues />
-      <OurPeople />
       <OurProjects />
-      <Newsletter />
+      <OurPeople />
       <Footer />
     </div>
   );

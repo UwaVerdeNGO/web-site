@@ -1,16 +1,14 @@
 import React from 'react';
-import { ContentSection } from 'components/contentSection';
-import { ContentContainer } from 'components/contentSection/contentContainer';
+
 import { Spacer } from 'components/spacer';
 import styles from './styles.module.scss';
 
 export const MissionAndVision: React.FC = () => {
   return (
-    <ContentSection sectionBackground="grayBackground">
-      <ContentContainer>
-        <Spacer height="140px" className={styles.spacerSection} />
-        <div className={styles.contentgrid}>
-          <div className={styles.contentWrapper}>
+    
+        // <Spacer height="140px" className={styles.spacerSection} />
+        <div className={styles.contentGrid}>
+          <div className={styles.contentWrapperMission}>
             <div className={styles.alignedContent}>
               <h2 className={styles.title}>Mission</h2>
               <p className={styles.subtext}>
@@ -21,7 +19,7 @@ export const MissionAndVision: React.FC = () => {
             </div>
           </div>
 
-          <div className={styles.contentWrapper}>
+          <div className={styles.contentWrapperVision}>
             <div className={styles.alignedContent}>
               <h2 className={styles.title}>Vision</h2>
               <p className={styles.subtext}>
@@ -32,9 +30,7 @@ export const MissionAndVision: React.FC = () => {
             </div>
           </div>
         </div>
-
-        <Spacer height="140px" className={styles.spacerSection} />
-      </ContentContainer>
-    </ContentSection>
-  );
+  )
+        // <Spacer height="140px" className={styles.spacerSection} />
+     
 };

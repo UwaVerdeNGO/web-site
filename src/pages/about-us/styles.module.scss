@@ -2,10 +2,40 @@
 
 .banner {
   width: 100%;
+  padding: 0 28px;
+  min-height: 980px;
+  padding-top: 115px;
+  position: relative;
 
   img {
     width: 100%;
+    height: 980px;
+    object-fit: cover;
+    border-radius: 20px;
+    transform: rotate(180deg);
   }
+}
+.aboutUsSection {
+  position: absolute;
+  bottom: 0;
+  width: 1864px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  color: $white;
+  font-family: $manrope;
+  font-size: 120px;
+  font-weight: 700;
+}
+.about {
+  color: $white;
+  font-family: $manrope;
+  font-weight: 700;
+  font-size: 24px;
+  width: 700px;
 }
 
 @media screen and (max-width: 660px) {
