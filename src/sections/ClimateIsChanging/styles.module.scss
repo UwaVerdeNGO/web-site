@@ -5,7 +5,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 347px 0 285px;
+  height: 900px;
+  // padding: 347px 0 285px;
   background: #333333;
   border-radius: 30px 30px 0 0;
 
@@ -22,7 +23,7 @@
   font-family: $manrope;
   font-size: 56px;
   font-weight: 700;
-  line-height: 76.5px;
+  line-height: 100%;
   text-align: center;
   color: $white;
 
@@ -35,17 +36,27 @@
 .firstMessage {
   animation: titleAnimation 4s ease-in-out forwards, textBlinker 3s infinite;
   opacity: 0;
+  margin-bottom: 8px;
 }
 
 .secondMessage {
   animation: subTitleAnimation 4s ease-in-out forwards,
     textBlinker 3s infinite 1.5s;
   opacity: 0;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 
   @media screen and (max-width: 1024px) {
     margin-bottom: 72px;
   }
+}
+.thirdMessage {
+  font-family: $manrope;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  width: 608px;
+  margin-bottom: 56px;
+  color: $white;
 }
 
 .buttonWrapper {
