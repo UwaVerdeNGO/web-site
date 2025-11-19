@@ -1,5 +1,4 @@
 import { Header } from 'components/header';
-import { LeadCapture } from 'sections/LeadCapture';
 import { HorizontalCards } from 'sections/HorizontalCards';
 import { OurValues } from 'sections/OurValues';
 import { ImageSection } from 'sections/ImageSection';
@@ -18,7 +17,6 @@ function Home() {
     <div style={{ overflowX: '-moz-hidden-unscrollable' }}>
       <Header />
       <Hero />
-      {/* <LeadCapture /> */}
       <WhatWeDo />
       <OurValues />
       <HorizontalCards />
@@ -32,7 +30,7 @@ function Home() {
         profilePhoto={Silvia}
       />
       <ClimateIsChanging />
-      <Newsletter />
+      {/* <Newsletter /> */}
       <Footer />
     </div>
   );
