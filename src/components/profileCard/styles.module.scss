@@ -3,6 +3,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  max-width: 451px;
 
   @media screen and (max-width: 768px) {
     align-items: center;
@@ -10,17 +11,17 @@
 }
 
 .profilePhoto {
-  max-width: 264px;
-  max-height: 270px;
+  max-width: 451px;
+  max-height: 425.81px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .name {
   font-family: $manrope;
   font-weight: bold;
   font-size: 20px;
-  line-height: 27px;
-  margin: 12px 0 4px;
+  margin: 11px 0 4px;
   color: $white;
 }
 
@@ -28,7 +29,6 @@
   font-family: $manrope;
   font-weight: normal;
   font-size: 16px;
-  line-height: 22px;
   color: $lightBlack;
 }
 

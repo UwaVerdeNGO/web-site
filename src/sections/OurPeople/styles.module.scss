@@ -1,7 +1,9 @@
 @import '../../styles/variables';
 
 .wrapper {
-  padding: 166px 0 155px;
+  width: 100%;
+  padding: 0 28px;
+  background-color: $defaultTextGray;
 }
 
 .title {
@@ -15,13 +17,42 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 23px;
+  width: 100%;
+  margin-bottom: 284px;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     padding: 0 27.5px;
   }
+}
+.countrySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 515px;
+}
+.countryTitle {
+  color: $primary200Purple;
+  font-family: $manrope;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 61px;
+}
+.country {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.countryName {
+  font-family: $rubik;
+  color: $primary200Purple;
+  font-weight: 800;
+  font-size: 80px;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 660px) {
