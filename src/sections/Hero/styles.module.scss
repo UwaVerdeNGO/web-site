@@ -1,56 +1,71 @@
 @import '../../styles/variables';
 
 .contentWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 28px;
+  padding: 0 12px;
   padding-top: 115px;
-  margin-bottom: 197px;
-
-  @media screen and (max-width: 1024px) {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    height: 100%;
-  }
-
-  @media screen and (max-width: 660px) {
-    padding-left: 16px;
-    width: 100%;
+  @media only screen and (min-width: 1440px) {
+    padding: 0 28px;
+    margin-bottom: 197px;
+    padding-top: 115px;
   }
 }
 .heroImgContainer {
   width: 100%;
   background-image: url('./../../assets/images/hero-1920.png');
   background-repeat: no-repeat;
-  background-size: 1864px 984px;
   background-position: center;
-  height: 984px;
-
+  background-size: 351px 565px;
+  height: 565px;
   border-radius: 20px;
   position: relative;
+
+  @media only screen and (min-width: 1440px) {
+    background-size: 2504px 984px;
+    height: 984px;
+  }
 }
 .heroPara {
   font-family: $manrope;
   color: $white;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 400;
   position: absolute;
-  top: 50px;
-  left: 50px;
-  width: 548px;
+  bottom: 26px;
+  left: 15px;
+  width: 323px;
+
+  @media only screen and (min-width: 1440px) {
+    font-size: 24px;
+    line-height: 28px;
+    top: 50px;
+    left: 50px;
+    width: 548px;
+    height: 54.33px;
+  }
 }
 .heroHeading {
   font-family: $manrope;
   color: $white;
+  font-size: 40px;
+  line-height: 45px;
   font-weight: 800;
-  font-size: 150px;
-  line-height: 150px;
   text-transform: uppercase;
   position: absolute;
-  top: 640px;
-  left: 50px;
-}
+  top: 20px;
+  left: 15px;
 
+  @media only screen and (min-width: 1440px) {
+    font-size: 110px;
+    line-height: 110px;
+    top: 720px;
+    left: 50px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    font-size: 150px;
+    line-height: 150px;
+    top: 640px;
+    left: 50px;
+  }
+}
