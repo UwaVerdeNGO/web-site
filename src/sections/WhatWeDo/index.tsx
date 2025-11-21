@@ -1,13 +1,9 @@
 import { useState } from 'react';
-import { ContentSection } from 'components/contentSection';
-import { ContentContainer } from 'components/contentSection/contentContainer';
-import { StepTab, StepTabItem } from 'components/stepTab';
 import { areasOfWork } from './areasOfWork';
 import styles from './styles.module.scss';
-import { Spacer } from 'components/spacer';
+
 
 export function WhatWeDo() {
-  const [activeTab, setActiveTab] = useState(0);
 
   return (
     <>
@@ -31,7 +27,7 @@ export function WhatWeDo() {
                 </div>
               ))}
             </div>
-			<div className={styles.itemGroup} aria-hidden>
+            <div className={styles.itemGroup} aria-hidden>
               {areasOfWork.map((item, index) => (
                 <div className={styles.workItem} key={index}>
                   {item.area}
