@@ -2,28 +2,44 @@
 
 .contentWrapper {
   width: 100%;
-  padding: 0 28px;
-  margin-bottom: 370px;
+  padding: 0 12px;
+  margin-bottom: 123px;
+
+  @media only screen and (min-width: 1440px) {
+    padding: 0 28px;
+    margin-bottom: 370px;
+  }
 }
 .whatWeDo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 223px;
+  margin-bottom: 81px;
+  @media only screen and (min-width: 1440px) {
+    margin-bottom: 223px;
+  }
 }
 .title {
   font-family: $manrope;
-  font-size: 24px;
-  line-height: 100%;
+  font-size: 14px;
   font-weight: 600;
+  @media only screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
 }
 .para {
   font-family: $manrope;
   font-weight: 600;
-  font-size: 44px;
-  line-height: 50px;
-  width: 922px;
+  font-size: 20px;
+  line-height: 24px;
+  width: 351px;
   text-align: center;
+
+  @media only screen and (min-width: 1440px) {
+    font-size: 44px;
+    line-height: 50px;
+    width: 922px;
+  }
 }
 .areaWork {
   display: flex;
@@ -41,37 +57,72 @@
 .carousel {
   width: 100%;
   display: flex;
-  overflow-x: auto;
+  flex-direction: column;
+  align-items: center;
 }
-.carousel::-webkit-scrollbar {
-  display: none;
-}
+
 .itemGroup {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   gap: 24px;
-  animation: spin 40s infinite linear;
-  padding-right: 24px;
+}
+.itemGroup:nth-child(2) {
+  display: none;
 }
 .workItem {
-  width: 400px;
-  height: 80px;
+  width: 351px;
+  height: 56px;
   border: 0.5px solid $lightBlack;
   border-radius: 100px;
-  padding: 16px;
+  padding: 8px 24px;
   font-family: $manrope;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
   align-content: center;
-  flex: 0 0 400px;
 }
-@keyframes spin {
-  from {
-    translate: 0;
+
+@media only screen and (min-width: 1440px) {
+  .carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
   }
-  to {
-    translate: -100%;
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .itemGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    animation: spin 40s infinite linear;
+    padding-right: 24px;
+  }
+  .itemGroup:nth-child(2){
+    display: flex;
+  }
+  .workItem {
+    width: 400px;
+    height: 80px;
+    border: 0.5px solid $lightBlack;
+    border-radius: 100px;
+    padding: 16px;
+    font-family: $manrope;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    align-content: center;
+    flex: 0 0 400px;
+  }
+  @keyframes spin {
+    from {
+      translate: 0;
+    }
+    to {
+      translate: -100%;
+    }
   }
 }
