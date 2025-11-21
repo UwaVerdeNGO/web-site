@@ -1,15 +1,41 @@
 @import '../../styles/variables';
+.ourValueContainer {
+  width: 100%;
+  padding: 0 12px;
+  margin-bottom: 72px;
+}
 .table {
   width: 100%;
 }
+.tableBody {
+  width: 100%;
+}
 .tableRow {
+  display: flex;
+  flex-direction: column;
   border-bottom: 1px solid $lightGray;
   border-top: 1px solid $lightGray;
-  height: 204px;
-  padding: 48px;
   font-family: $manrope;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-@media only screen and (max-width: 1920px) {
+.bulletNum {
+  color: $lightBlack;
+  font-size: 14px;
+}
+.headerData {
+  color: $defaultTextGray;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.bodyData {
+  font-size: 14px;
+  font-weight: 400;
+  color: $defaultTextGray;
+}
+
+@media only screen and (min-width: 1440px) {
   .ourValueContainer {
     padding: 0 28px;
     margin-bottom: 200px;
@@ -21,20 +47,29 @@
     color: $defaultTextGray;
     margin-bottom: 36px;
   }
+
+  .tableRow {
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid $lightGray;
+    border-top: 1px solid $lightGray;
+    height: 204px;
+    font-family: $manrope;
+  }
   .bulletNum {
-    width: 320px;
+    width: 20%;
     color: $lightBlack;
     font-size: 24px;
     font-weight: 600;
   }
   .headerData {
-    width: 960px;
+    width: 60%;
     font-size: 36px;
     font-weight: 700;
     color: $defaultTextGray;
   }
   .bodyData {
-    width: 640px;
+    width: 40%;
     font-size: 20px;
     font-weight: 400;
     color: $defaultTextGray;
