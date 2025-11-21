@@ -1,43 +1,46 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	border-radius: 20px;
-	transition: all .3s;
-	
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: all 0.3s;
 }
 
 .bigSpacing {
-	padding: 0;
+  padding: 0;
 }
 
 .mediumSpacing {
-	padding: 48px;
+  padding: 48px;
 }
 
 .purple {
-	background: $primaryPurple;
+  background: $primaryPurple;
 }
 
 .black {
-	background: $defaultTextGray;
+  background: $defaultTextGray;
 }
 
 .gradientPurple {
-	background: linear-gradient(0deg, $primary400Purple -50.12%, $primary300Purple 138.88%);
-	border: 2px solid $primary300Purple;
+  background: linear-gradient(
+    0deg,
+    $primary400Purple -50.12%,
+    $primary300Purple 138.88%
+  );
+  border: 2px solid $primary300Purple;
 }
 
 .gray {
-	border: 1px solid $white;
-	background: $gray;
+  border: 1px solid $white;
+  background: $gray;
 }
 
 .green {
-	background: $green;
+  background: $green;
 }
 
 .transparent {
-	background: none;
+  background: none;
 }
