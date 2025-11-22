@@ -7,7 +7,6 @@ import whiteArrow from 'assets/icons/whiteArrowFoward.png';
 export const Footer: FC = () => {
   return (
     <div className={styles.wrapper}>
-      {/* <hr className={styles.hrLine} /> */}
       <Spacer className={styles.topSpacer} />
       <div className={styles.topDivision}>
         <div className={styles.newsLetter}>
