@@ -10,7 +10,7 @@ type CardProps = {
     | 'gray'
     | 'green'
     | 'transparent';
-  spacing: 'bigSpacing' | 'mediumSpacing' | 'none';
+  spacing: 'bigSpacing' | 'mediumSpacing' | 'none' | 'smallSpacing';
 } & HTMLAttributes<HTMLDivElement>;
 
 export const Card: FC<CardProps> = ({
