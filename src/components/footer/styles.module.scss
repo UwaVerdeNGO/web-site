@@ -1,11 +1,14 @@
 @import '../../styles/variables';
 
-
 .wrapper {
   width: 100%;
-  padding: 0 28px 16px 28px;
+  padding: 0 12px;
   background-color: $defaultTextGray;
   margin-top: 0.5px;
+  @media only screen and (min-width: 1440px) {
+    padding: 0 28px;
+    margin-top: 1.5px;
+  }
 }
 
 .topSpacer {
@@ -20,6 +23,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 49px;
   margin-bottom: 249px;
 
   @media screen and (max-width: 1024px) {
@@ -31,21 +35,29 @@
 .stayTitle {
   font-family: $manrope;
   font-weight: 600;
-  font-size: 80px;
+  font-size: 40px;
   color: $white;
+  @media only screen and (min-width: 1440px) {
+    font-weight: 600;
+    font-size: 80px;
+  }
 }
 .newsInfo {
   font-family: $manrope;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 14px;
   color: $white;
+  @media only screen and (min-width: 1440px) {
+    font-weight: 400;
+    font-size: 24px;
+  }
 }
 .inputContainer {
   position: relative;
 }
 .inputEmail {
-  width: 525px;
-  height: 59px;
+  width: 351px;
+  height: 44px;
   background-color: $mediumGray;
   border: none;
   border-radius: 100px;
@@ -56,16 +68,25 @@
     font-size: 20px;
     color: $lightGray;
   }
+  @media only screen and (min-width: 1440px) {
+    width: 525px;
+    height: 59px;
+  }
 }
 .emailBtn {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
   background-color: $green;
   border: none;
   border-radius: 100px;
-  padding: 12px;
+  padding: 5px;
   position: absolute;
   right: 1px;
+  @media only screen and (min-width: 1440px) {
+    width: 55px;
+    height: 55px;
+    padding: 12px;
+  }
 }
 .arrowImg {
   width: 32px;
@@ -74,31 +95,56 @@
 
 .topRightDivision {
   display: flex;
-  gap: 112px;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+  @media only screen and (min-width: 1440px) {
+    display: flex;
+  }
+  @media only screen and (min-width: 1920px) {
+    display: flex;
+    margin-left: 657px;
+  }
 }
 .contact,
 .connect,
 .discover {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+
+  @media only screen and (min-width: 1440px) {
+    gap: 16px;
+  }
 }
 .contactTitle,
 .connectTitle,
 .discoverTitle {
   font-family: $rubik;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
+  margin: 0;
   color: $white;
+  @media only screen and (min-width: 1440px) {
+    font-size: 20px;
+  }
 }
 .contactDetails,
 .connectDetails,
 .discoverDetails {
   font-family: $manrope;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 14px;
   color: $white;
   text-decoration: none;
+  @media only screen and (min-width: 1440px) {
+    font-size: 20px;
+  }
+}
+.contactDetails {
+  width: 120px;
+  @media only screen and (min-width: 1440px) {
+    width: 198px;
+  }
 }
 
 .bottomDivision {
@@ -106,9 +152,13 @@
   flex-direction: column;
 
   .logo {
-    width: 905px;
-    height: 310px;
+    width: 355px;
+    height: 122px;
     margin-bottom: 16px;
+    @media only screen and (min-width: 1440px) {
+      width: 905px;
+      height: 310px;
+    }
   }
   .copyRightsSection {
     display: flex;
@@ -122,20 +172,25 @@
   .policyLink {
     font-family: $manrope;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     color: $white;
+    @media screen and (min-width: 1440px) {
+      font-size: 16px;
+    }
   }
 
   .copyRights {
     font-family: $manrope;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 21.86px;
     color: $white;
     margin: 0;
+    width: 120px;
 
-    @media screen and (max-width: 1024px) {
-      margin: 106px 16px 0;
+    @media screen and (min-width: 1440px) {
+      font-size: 16px;
+      line-height: 21.86px;
+      width: auto;
     }
   }
 
