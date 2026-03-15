@@ -7,7 +7,7 @@
   margin-top: 0.5px;
   @media only screen and (min-width: 1440px) {
     padding: 0 28px;
-    margin-top: 1.5px;
+    margin-top: 0.5px;
   }
 }
 
@@ -111,10 +111,7 @@
 .discover {
   display: flex;
   flex-direction: column;
-
-  @media only screen and (min-width: 1440px) {
-    gap: 16px;
-  }
+  gap: 16px;
 }
 .contactTitle,
 .connectTitle,
@@ -142,6 +139,7 @@
 }
 .contactDetails {
   width: 120px;
+  margin: 0;
   @media only screen and (min-width: 1440px) {
     width: 198px;
   }

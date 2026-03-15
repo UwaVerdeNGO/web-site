@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Spacer } from 'components/spacer';
 import styles from './styles.module.scss';
-import Logo from 'assets/icons/whiteLogo.png';
+import Logo from 'assets/icons/logowhite.png';
 import whiteArrow from 'assets/icons/whiteArrowFoward.png';
 
 export const Footer: FC = () => {
@@ -74,7 +74,7 @@ export const Footer: FC = () => {
         <img src={Logo} alt="logo" className={styles.logo} />
         <div className={styles.copyRightsSection}>
           <p className={styles.copyRights}>
-            © 2025 UwaVerde. All Rights Reserved.
+            © 2026 UwaVerde
           </p>
           <div className={styles.policyContainer}>
             <a href="" className={styles.policyLink}>
