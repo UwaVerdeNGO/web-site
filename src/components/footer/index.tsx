@@ -32,17 +32,25 @@ export const Footer: FC = () => {
         <div className={styles.topRightDivision}>
           <div className={styles.contact}>
             <p className={styles.contactTitle}>Contact</p>
-            <p className={styles.contactDetails}>info@uwaverde.com</p>
+            <p className={styles.contactDetails}>admin@uwaverde.com</p>
             <p className={styles.contactDetails}>
               Palmaille 96, 22767, Hamburg Germany
             </p>
           </div>
           <div className={styles.connect}>
             <p className={styles.connectTitle}>Connect</p>
-            <a href="" className={styles.connectDetails}>
+            <a
+              href="https://www.linkedin.com/company/uwaverde/"
+              className={styles.connectDetails}
+              target="_blank"
+            >
               LinkedIn
             </a>
-            <a href="" className={styles.connectDetails}>
+            <a
+              href="https://www.instagram.com/uwa.verde/"
+              className={styles.connectDetails}
+              target="_blank"
+            >
               Instagram
             </a>
           </div>
@@ -51,7 +59,10 @@ export const Footer: FC = () => {
             <a href="/about-us" className={styles.discoverDetails}>
               About Us
             </a>
-            <a href="#" className={styles.discoverDetails}>
+            <a
+              href="#"
+              className={styles.discoverDetails}
+            >
               Our People
             </a>
             <a href="#" className={styles.discoverDetails}>
@@ -73,9 +84,7 @@ export const Footer: FC = () => {
       <div className={styles.bottomDivision}>
         <img src={Logo} alt="logo" className={styles.logo} />
         <div className={styles.copyRightsSection}>
-          <p className={styles.copyRights}>
-            © 2026 UwaVerde
-          </p>
+          <p className={styles.copyRights}>© 2026 UwaVerde</p>
           <div className={styles.policyContainer}>
             <a href="" className={styles.policyLink}>
               Privacy Policy
