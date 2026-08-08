@@ -8,6 +8,7 @@ import { RouterProvider } from 'react-router';
 import AboutUs from 'pages/about-us';
 import MemberLogIn from 'pages/MemberLogIn';
 import Home from 'pages/home';
+import MemberPortal from 'pages/MemberPortal';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
     element: <AboutUs />,
   },
   { path: '/member-login', element: <MemberLogIn /> },
+  {path:'/member-portal',element:<MemberPortal/>}
 ]);
 
 const root = ReactDOM.createRoot(

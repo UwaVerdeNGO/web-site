@@ -47,9 +47,7 @@ const MemberLogIn: React.FC = () => {
         </button>
         <div className={styles.hrText}>
           <hr />
-          <span className={styles.logInSpan}>
-            or log in with e-mail
-          </span>
+          <span className={styles.logInSpan}>or log in with e-mail</span>
         </div>
 
         <form
@@ -88,8 +86,11 @@ const MemberLogIn: React.FC = () => {
           <a href="#" className={styles.forgotPassword}>
             Forgot your password?
           </a>
+
           <button type="submit" className={styles.logInBtn}>
-            Log in
+            <a href="member-portal" className={styles.logInTxt}>
+              Log in
+            </a>
           </button>
         </form>
       </div>
