@@ -26,3 +26,10 @@ $lowOpacityGray: #c7c7c7;
 $gray: #4d4d4d;
 $transparentGray: #7d7d7d;
 $green: #40916c;
+
+/***** BREAKPOINTS (mobile-first: always use with min-width) *******/
+$bp-sm: 660px;
+$bp-md: 1024px;
+$bp-lg: 1300px;
+$bp-xl: 1440px;
+$bp-xxl: 1920px;

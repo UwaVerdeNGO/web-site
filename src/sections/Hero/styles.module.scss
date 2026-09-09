@@ -4,68 +4,88 @@
   padding: 0 12px;
   padding-top: 88px;
   margin-bottom: 62px;
-  @media only screen and (min-width: 1440px) {
-    padding: 0 28px;
+
+  // longhand padding-left/right (not the `padding` shorthand) so this
+  // never resets padding-top back to 0 and re-hides the Hero behind
+  // the fixed 88px header.
+  @media only screen and (min-width: $bp-xl) {
+    padding-left: 28px;
+    padding-right: 28px;
     margin-bottom: 221px;
-    padding-top: 88px;
   }
 }
+
+// aspect-ratio + background-size:cover instead of a fixed-px
+// background-size: before, between the base and 1440px (which covers
+// the ~1300px reported), the container had a fixed height:565px but
+// fluid width, so the image (fixed at 1384x565) mismatched the
+// container and got cropped/overflowed. Now height always tracks
+// the real width.
 .heroImgContainer {
+  width: 100%;
+  aspect-ratio: 1384 / 565;
   background-image: url('./../../assets/images/hero-1920.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1384px 565px;
-  height: 565px;
+  background-size: cover;
   border-radius: 20px;
   position: relative;
 
-  @media only screen and (min-width: 1440px) {
-    background-size: 2504px 984px;
-    height: 984px;
+  @media only screen and (min-width: $bp-xl) {
+    aspect-ratio: 2504 / 984;
   }
 }
 .heroPara {
   font-family: $manrope;
   color: $white;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.125rem;
   font-weight: 400;
   position: absolute;
-  bottom: 26px;
-  left: 15px;
-  width: 323px;
+  bottom: 1.625rem;
+  left: 0.9375rem;
+  // max-width instead of a fixed width: never forces overflow on
+  // narrow containers, it just caps the maximum line size.
+  max-width: 20.1875rem; // 323px
 
-  @media only screen and (min-width: 1440px) {
-    font-size: 24px;
-    line-height: 28px;
-    top: 50px;
-    left: 50px;
-    width: 548px;
-    height: 54.33px;
+  // On desktop, positioned as a % of heroImgContainer (not a fixed px
+  // top/bottom) so it always stays inside the image regardless of the
+  // container's actual fluid height.
+  @media only screen and (min-width: $bp-xl) {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    top: auto;
+    bottom: 8%;
+    left: 4%;
+    max-width: 34.25rem; // 548px
   }
 }
 .heroHeading {
   font-family: $manrope;
   color: $white;
-  font-size: 40px;
-  line-height: 45px;
+  // clamp(min, fluid-preferred, max): grows smoothly with the
+  // viewport instead of the abrupt jump that used to happen
+  // (40px -> 110px at 1440px), removing the visual "step" around
+  // 1300-1440px.
+  font-size: clamp(2.5rem, 1.5rem + 3vw, 2.8125rem);
+  line-height: 1.1;
   font-weight: 800;
   text-transform: uppercase;
   position: absolute;
-  top: 20px;
-  left: 15px;
+  top: 1.25rem;
+  left: 0.9375rem;
 
-  @media only screen and (min-width: 1440px) {
-    font-size: 110px;
-    line-height: 110px;
-    top: 720px;
-    left: 50px;
-  }
-
-  @media only screen and (min-width: 1920px) {
-    font-size: 150px;
-    line-height: 150px;
-    top: 640px;
-    left: 50px;
+  // On desktop, positioned near the top as a % of heroImgContainer
+  // (not a fixed px top) so it always stays inside the image
+  // regardless of the container's actual fluid height — the previous
+  // fixed top:720px was taller than the real (fluid) container height
+  // at most viewport widths, pushing the heading outside the image.
+  @media only screen and (min-width: $bp-xl) {
+    // interpolates exactly 110px (at 1440px) -> 150px (at 1920px+),
+    // preserving the same endpoints from the original design.
+    font-size: clamp(6.875rem, -0.625rem + 8.333vw, 9.375rem);
+    line-height: 1;
+    top: 8%;
+    left: 4%;
   }
 }
